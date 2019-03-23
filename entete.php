@@ -1,5 +1,5 @@
 <nav id="menu">
     <div>
-        <h2>Titre</h2>
+        <h2>EasyStockage</h2>
     </div>
 </nav>
