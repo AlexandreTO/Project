@@ -20,7 +20,14 @@
         Fusce sit amet efficitur nibh. Aenean lobortis ultricies lorem ut volutpat.
         Duis vehicula sed velit scelerisque ultrices. <br />
         In ultrices odio in risus tincidunt, quis posuere purus facilisis.
-        Integer quis ultrices ligula. Aenean convallis mi aliquam mauris aliquet vehicula. </p>
+        Integer quis ultrices ligula. Aenean convallis mi aliquam mauris aliquet vehicula. 
+    </p>
+    <article>
+        <section>
+            <p>Texte</p>
+        </section>
+    </article>
+
 </body>
 
 </html>

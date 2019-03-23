@@ -1,0 +1,37 @@
+h2{
+    color:green;
+}
+
+
+
+
+
+                                            /* Scroll BAR DEBUT */
+::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+}
+                                  
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 1px;
+    border-radius: 10px;
+}   
+                                  
+::-webkit-scrollbar-track-piece {
+}
+                                  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #f29898; 
+} 
+::-webkit-scrollbar-corner {
+}    
+                                  
+::-webkit-resizer {  
+}
+                                 
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #f29898; 
+}
+                                             /* Scroll BAR FIN */
