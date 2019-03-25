@@ -1,7 +1,49 @@
-h2{
-    color:green;
+body {
+    font-family: 'Courgette', cursive;
+}
+main{
+    margin:0;
+    text-align:center; 
+    margin:auto;
+    /* width : 1000px; */ /*centrer le texte pour l'instant*/
 }
 
+.navigation{
+    display:flex;
+    width: 1300px;
+    text-align: center;
+    margin: auto;
+
+}
+
+
+ul{
+    list-style-type: none;
+    margin :0;
+    padding :0;
+    overflow: hidden;
+}
+.navigation li{
+    padding: 20px;
+    align-items: center;
+    margin-right: auto;
+    margin-left:auto;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li a{
+    text-decoration: none;
+    color:black;
+}
+li a:hover{
+
+    color:#894e00;
+}
 
 
 
