@@ -14,7 +14,7 @@
     <header>
         <?php include("entete.php");?>
     </header>
-
+<!--Pour voir le site avec la mise en forme il faut l'ouvrir sur un serveur local avec WAMPS et faire un clone du git dans WWW-->
     <main>
         <article>
             <section>
