@@ -1,0 +1,2 @@
+- Logo redimensionné correctement pour la barre de navigation
+- Choix des différentes couleurs
