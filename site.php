@@ -18,6 +18,7 @@
     <main>
         <article>
             <section>
+            <span><img src="images/image.png" alt="gateaux" class="header-img"></span>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Pellentesque bibendum interdum ex, sit amet consequat purus sollicitudin ut.

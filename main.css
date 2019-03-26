@@ -1,5 +1,6 @@
 body {
     font-family: 'Courgette', cursive;
+    background-color: rgb(250, 247, 243);
 }
 main{
     margin:0;
@@ -30,8 +31,7 @@ ul{
     margin-left:auto;
 }
 .logo{
-    width: 60px;
-    height: 60px;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,8 +44,17 @@ li a:hover{
 
     color:#894e00;
 }
+span{
+    display:block;
+    color: rgba(242, 152, 152, 0.5);
+}
+.header-img{
+    height: 400px;
+    width: 1500px;
+    margin-top:-5px;
+}
 
-@media all and (max-width: 1024px)
+@media all and (max-width: 1200px)
 {
     .navigation
     {
