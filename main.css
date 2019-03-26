@@ -8,7 +8,7 @@ main{
     /* width : 1000px; */ /*centrer le texte pour l'instant*/
 }
 
-nav{
+.navigation{
     display:flex;
     width: 1300px;
     text-align: center;
@@ -45,11 +45,34 @@ li a:hover{
     color:#894e00;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+@media all and (max-width: 1024px)
+{
+    .navigation
+    {
+        width: auto;
+        text-align: left;
     }
-  }
+    
+    .navigation ul
+    {
+        flex-direction: column;
+    }
+
+    .navigation li
+    {
+        padding-left: 4px;
+    }
+    
+    .navigation a
+    {
+        font-size: 1.1em;
+    }
+    
+    .navigation a:hover
+    {
+        border-bottom: 0;
+    }
+}
 
 
 
