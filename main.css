@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
 body {
-    font-family: 'Courgette', cursive;
+    font-family: 'Courgette';
     background-color: rgb(250, 247, 243);
 
 }
@@ -77,7 +78,7 @@ span{
     margin-top: 0;
 }
 
-@media all and (max-width: 1200px)
+@media screen and (max-width: 1200px)
 {
     #navigation
     {
@@ -107,8 +108,11 @@ span{
     {
         border-bottom: 0;
     }
+    #header-img{
+        width:auto; /*essai du responsive pour le slogan mais qui ne marche pas */
+        text-align:left;
+    }
 }
-
 
 
                                             /* Scroll BAR DEBUT */
