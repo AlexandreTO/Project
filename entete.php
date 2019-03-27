@@ -1,6 +1,6 @@
 <nav>
-    <ul class="navigation">
-        <li><a href="#">Accueil</li></a>
+    <ul id="navigation">
+        <li><a href="#" class="active">Accueil</li></a>
         <li><a href="#">Catalogue</li></a>
         <img src="images/logo.png" alt="logo" class ="logo">
         <li><a href="#">Support</a>

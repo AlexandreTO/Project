@@ -11,23 +11,19 @@
 </head>
 
 <body>
-    <header>
+    <header id="test">
         <?php include("entete.php");?>
     </header>
 <!--Pour voir le site avec la mise en forme il faut l'ouvrir sur un serveur local avec WAMPS et faire un pull (ou un clone) du git dans WWW-->
     <main>
         <article>
-            <section>
-            <span><img src="images/image.png" alt="gateaux" class="header-img"></span>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque bibendum interdum ex, sit amet consequat purus sollicitudin ut.
-                    Fusce sit amet efficitur nibh. Aenean lobortis ultricies lorem ut volutpat.
-                    Duis vehicula sed velit scelerisque ultrices. <br />
-                    In ultrices odio in risus tincidunt, quis posuere purus facilisis.
-                    Integer quis ultrices ligula. Aenean convallis mi aliquam mauris aliquet vehicula.
-                </p>
+            <section id="header-img">
+                <div class="slogan"><h1 >EasyStockage</h1>
+                <h3>La magie de la gourmandise</h3></div>
             </section>
+        </article>
+        <article>
+            <p>TEstaaaaaaaaaaaaaaaaaaaaaaaaaa<br/>aaar</p>
         </article>
     </main>
 </body>
