@@ -19,7 +19,6 @@
         <article>
             <section class="view header-img">
                 <div class="contenu">
-                    <div class="">
                         <h1>EasyStockage</h1>
                         <h3>La magie de la gourmandise</h3>
                     </div>
