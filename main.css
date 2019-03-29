@@ -1,146 +1,161 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette');
-body {
-    font-family: 'Courgette';
-    background-color: rgb(250, 247, 243);
 
-}
-main{
-    margin:0;
-    text-align:center; 
-    margin:auto;
-    /* width : 1000px; */ /*centrer le texte pour l'instant*/
+.active {
+    color: #894e00;
 }
 
+html,
+body,
+header,
+.view {
 
-#navigation{
-    display:flex;
-    width: 1300px;
+
+    margin: 0px;
+    background-color: rgb(250, 247, 243)
+}
+
+main {
+    margin: 0;
     text-align: center;
     margin: auto;
+    /* width : 1000px; */
+    /*centrer le texte pour l'instant*/
 }
 
-
-ul{
-    list-style-type: none;
-    margin :0px;
-    padding :0px;
-    overflow: hidden;
-}
-#navigation li{
-    padding: 20px;
-    align-items: center;
+.contenu {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-right: auto;
-    margin-left:auto;
-}
-.logo{
-    width: 5%;
-    height: 5%;
-    margin: auto;
+    margin-left: auto;
+    margin-top: -10px;
+    padding-top:150px;
+    text-align: center;
 }
 
-li a{
+.navbar {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    margin: 0px;
+    font-family: 'Courgette';
+}
+
+a {
     text-decoration: none;
-    color:black;
+    color: gray;
 }
-li a:hover{
 
-    color:#894e00;
+a:visited {
+    text-decoration: none;
 }
-span{
-    display:block;
-    color: rgba(242, 152, 152, 0.5);
+
+a:hover {
+    color: #894e00;
 }
-.sticky {
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.fixed-top {
     position: fixed;
     top: 0;
-    width: 100%;
-  }
-#header-img{
-    background: url("images/image.png") no-repeat;
-    background-size: 100%;
-    margin:0px;
-    padding: 0px;
-    width: 100%;
-    height: 100vh;
-}
-.slogan{
-    max-width: 1180px;
-    text-align: center;
-    padding: 100px 10rem;
-    color:white;
-}
-#header-img h1{
-    font-size: 4rem;
-    margin-bottom:0;
-}
-#header-img h3{
-    font-size: 2rem;
-    margin-top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
-@media screen and (max-width: 1200px)
-{
-    #navigation
-    {
+.header-img {
+    background: url("images/image.png") center center no-repeat;
+    background-size: cover;
+    min-height:60vh;
+    height: 20vh;
+}
+
+.header-img h1 h3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-img h1 {
+    font-size: 3rem;
+    color:white;
+    margin-bottom: 0;
+}
+
+.header-img h3 {
+    font-size: 2rem;
+    margin-top:0;
+    color:white;
+}
+
+@media screen and (max-width: 1200px) {
+    #navigation {
         width: auto;
         text-align: left;
     }
-    
-    .logo{
-        width:30%;
+
+    .logo {
+        width: 30%;
     }
-    #navigation ul
-    {
+
+    #navigation ul {
         flex-direction: column;
     }
 
-    #navigation li
-    {
+    #navigation li {
         padding-left: 4px;
     }
-    
-    #navigation a
-    {
+
+    #navigation a {
         font-size: 1.1em;
     }
-    
-    #navigation a:hover
-    {
+
+    #navigation a:hover {
         border-bottom: 0;
     }
-    #header-img{
-        width:auto; /*essai du responsive pour le slogan mais qui ne marche pas */
-        text-align:left;
+    .contenu{
+        max-width: 540px;
     }
 }
 
 
-                                            /* Scroll BAR DEBUT */
+/* Scroll BAR DEBUT */
 ::-webkit-scrollbar {
     width: 11px;
     height: 11px;
 }
-                                  
+
 ::-webkit-scrollbar-track {
     -webkit-border-radius: 1px;
     border-radius: 10px;
-}   
-                                  
-::-webkit-scrollbar-track-piece {
 }
-                                  
+
+::-webkit-scrollbar-track-piece {}
+
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #f29898; 
-} 
-::-webkit-scrollbar-corner {
-}    
-                                  
-::-webkit-resizer {  
+    background: #f29898;
 }
-                                 
+
+::-webkit-scrollbar-corner {}
+
+::-webkit-resizer {}
+
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: #f29898; 
+    background: #f29898;
 }
-                                             /* Scroll BAR FIN */
+
+/* Scroll BAR FIN */
