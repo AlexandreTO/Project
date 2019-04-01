@@ -16,18 +16,17 @@ main {
     margin: 0;
     text-align: center;
     margin: auto;
-    /* width : 1000px; */
+    width: 1000px;
     /*centrer le texte pour l'instant*/
 }
 
 .contenu {
-    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     margin-top: -10px;
-    padding-top:150px;
+    padding-top: 150px;
     text-align: center;
 }
 
@@ -62,7 +61,7 @@ a:hover {
     display: block;
     padding: 0.5rem 1rem;
     margin-left: 100px;
-    margin-right: 90px;
+    margin-right: 100px;
 }
 
 .fixed-top {
@@ -76,7 +75,7 @@ a:hover {
 .header-img {
     background: url("images/image.png") center center no-repeat;
     background-size: cover;
-    min-height:60vh;
+    min-height: 60vh;
     height: 20vh;
 }
 
@@ -88,14 +87,14 @@ a:hover {
 
 .header-img h1 {
     font-size: 3rem;
-    color:white;
+    color: white;
     margin-bottom: 0;
 }
 
 .header-img h3 {
     font-size: 2rem;
-    margin-top:0;
-    color:white;
+    margin-top: 0;
+    color: white;
 }
 
 @media screen and (max-width: 1200px) {
@@ -123,14 +122,15 @@ a:hover {
     #navigation a:hover {
         border-bottom: 0;
     }
-    .contenu{
+
+    .contenu {
         max-width: 540px;
     }
 }
 
 
 /* Scroll BAR DEBUT */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 11px;
     height: 11px;
 }
@@ -154,6 +154,6 @@ a:hover {
 
 ::-webkit-scrollbar-thumb:window-inactive {
     background: #f29898;
-} */
+}
 
 /* Scroll BAR FIN */
