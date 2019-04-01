@@ -16,15 +16,12 @@
     </header>
     <!--Pour voir le site avec la mise en forme il faut l'ouvrir sur un serveur local avec WAMPS et faire un pull (ou un clone) du git dans WWW-->
     <main>
-        <article>
-            <section class="view header-img">
-                <div class="contenu">
-                        <h1>EasyStockage</h1>
-                        <h3>La magie de la gourmandise</h3>
-                    </div>
-
-                </div>
-            </section>
+        <div class="view header-img">
+            <div class="contenu">
+                <h1>EasyStockage</h1>
+                <h3>La magie de la gourmandise</h3>
+            </div>
+        </div>
         </article>
         <article>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus in,
