@@ -62,7 +62,7 @@ a:hover {
     display: block;
     padding: 0.5rem 1rem;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 90px;
 }
 
 .fixed-top {
@@ -70,7 +70,7 @@ a:hover {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 1000;
 }
 
 .header-img {
@@ -130,7 +130,7 @@ a:hover {
 
 
 /* Scroll BAR DEBUT */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 11px;
     height: 11px;
 }
@@ -154,6 +154,6 @@ a:hover {
 
 ::-webkit-scrollbar-thumb:window-inactive {
     background: #f29898;
-}
+} */
 
 /* Scroll BAR FIN */
