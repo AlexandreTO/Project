@@ -130,7 +130,7 @@ a:hover {
 
 
 /* Scroll BAR DEBUT */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 11px;
     height: 11px;
 }
@@ -154,6 +154,6 @@ a:hover {
 
 ::-webkit-scrollbar-thumb:window-inactive {
     background: #f29898;
-}
+} */
 
 /* Scroll BAR FIN */
