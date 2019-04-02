@@ -17,7 +17,6 @@ main {
     margin: 0;
     text-align: center;
     margin: auto;
-    /* width: 1000px; */
     /*centrer le texte pour l'instant*/
 }
 
@@ -50,6 +49,16 @@ article{
     font-family: 'Oxygen';
     margin-left: 100px;
     margin-right: 100px;
+}
+.texte-1{
+    display: flex;
+    align-items: center;
+}
+.image-1{
+    float: left;
+    width: 40%;
+    height: 13.2em;
+    margin:20px;
 }
 a {
     text-decoration: none;
