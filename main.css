@@ -23,8 +23,9 @@ main {
 
 .corps{
 	display: grid;
-	grid-template-columns: 150px 450px 100px 450px;
-	grid-template-rows: 50px 450px 50px 450px;
+/* 	grid-template-columns: 150px 450px 100px 450px;
+    grid-template-rows: 50px 450px 50px 450px; 
+    Le grid qu'on veut marche sans qu'on indique les dimensions de chaque grille*/ 
 	grid-gap: 10px;
 }
 .arti1{
