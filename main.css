@@ -21,6 +21,23 @@ main {
     /*centrer le texte pour l'instant*/
 }
 
+
+.corps{
+	display: grid;
+	grid-template-columns: 150px 450px 100px 450px
+	grid-template-rows: 50px 450px 50px 450px
+	grid-gap: 10px;
+}
+.arti1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.arti2{
+    grid-column: 3;
+    grid-row: 3;
+}
+
 .contenu {
     padding-right: 15px;
     padding-left: 15px;

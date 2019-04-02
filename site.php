@@ -22,7 +22,8 @@
                 <h3>La magie de la gourmandise</h3>
             </div>
         </div>
-        <article>
+        <section class="corps">
+        <article class="arti1">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus in,
                 ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit amet odio
                 a orci pulvinar suscipit eget in dui. Nullam viverra ultrices ex at aliquam. Duis elementum hendrerit
@@ -34,7 +35,7 @@
                 tristique augue eget libero tempus, ut tempus dolor sagittis. Sed sem dolor, condimentum vel arcu vel,
                 porttitor fermentum augue. In sodales ornare massa et porttitor.</p>
         </article>
-        <article>
+        <article class="arti2">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus in,
                 ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit amet odio
                 a orci pulvinar suscipit eget in dui. Nullam viverra ultrices ex at aliquam. Duis elementum hendrerit
@@ -57,6 +58,7 @@
 
             hello world
         </article>
+    </section>
     </main>
 </body>
 
