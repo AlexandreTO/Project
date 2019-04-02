@@ -22,7 +22,6 @@
                 <h3>La magie de la gourmandise</h3>
             </div>
         </div>
-        </article>
         <article>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus in,
                 ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit amet odio

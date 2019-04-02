@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
 
 .active {
     color: #894e00;
@@ -28,6 +29,7 @@ main {
     margin-top: -10px;
     padding-top: 150px;
     text-align: center;
+    font-family: 'Courgette';
 }
 
 .navbar {
@@ -44,6 +46,11 @@ main {
     font-family: 'Courgette';
 }
 
+article{
+    font-family: 'Oxygen';
+    margin-left: 100px;
+    margin-right: 100px;
+}
 a {
     text-decoration: none;
     color: black;
