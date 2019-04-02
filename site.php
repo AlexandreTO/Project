@@ -57,40 +57,8 @@
                     tincidunt viverra nisi. Curabitur volutpat est in metus laoreet, id pulvinar ligula posuere. Donec
                     tristique augue eget libero tempus, ut tempus dolor sagittis. Sed sem dolor, condimentum vel arcu
                     vel,
-                    porttitor fermentum augue. In sodales ornare massa et porttitor.</p>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <article>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus
-                        in,
-                        ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit
-                        amet
-                        odio
-                        a orci pulvinar suscipit eget in dui. Nullam viverra ultrices ex at aliquam. Duis elementum
-                        hendrerit
-                        purus vitae congue. Maecenas ipsum neque, pulvinar ut tincidunt quis, faucibus sit amet mauris.
-                        Nullam
-                        elit tortor, elementum id nulla quis, mollis rhoncus augue. Donec sagittis velit in ornare
-                        commodo.
-                        Ut
-                        quis pellentesque tortor. Etiam ipsum nisl, malesuada at nibh interdum, aliquam blandit orci.
-                        Aenean
-                        mi
-                        massa, rhoncus in massa ac, rutrum dictum ipsum. Maecenas odio quam, condimentum eget tellus ut,
-                        tincidunt viverra nisi. Curabitur volutpat est in metus laoreet, id pulvinar ligula posuere.
-                        Donec
-                        tristique augue eget libero tempus, ut tempus dolor sagittis. Sed sem dolor, condimentum vel
-                        arcu
-                        vel,
-                        porttitor fermentum augue. In sodales ornare massa et porttitor.</p>
-                    <br />
+                    porttitor fermentum augue. In sodales ornare massa et porttitor.</p>    
+                    <br/>
                 </article>
         </section>
     </main>
