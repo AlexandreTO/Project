@@ -23,7 +23,9 @@
             </div>
         </div>
         <section class="corps">
+            <img src="images/brian-chan-12168-unsplash.jpg" alt="cupcake" class="img-1">
             <article class="arti1">
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus in,
                     ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit amet
                     odio
@@ -57,9 +59,9 @@
                     tincidunt viverra nisi. Curabitur volutpat est in metus laoreet, id pulvinar ligula posuere. Donec
                     tristique augue eget libero tempus, ut tempus dolor sagittis. Sed sem dolor, condimentum vel arcu
                     vel,
-                    porttitor fermentum augue. In sodales ornare massa et porttitor.</p>    
-                    <br/>
-                </article>
+                    porttitor fermentum augue. In sodales ornare massa et porttitor.</p>
+                <br />
+            </article>
         </section>
     </main>
 </body>
