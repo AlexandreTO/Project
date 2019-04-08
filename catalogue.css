@@ -1,0 +1,100 @@
+html,
+body,
+header,
+.view {
+    margin: 0px;
+    background-color: rgb(250, 247, 243);
+}
+
+main {
+    margin: 0;
+    text-align: center;
+    margin: auto;
+    /*centrer le texte pour l'instant*/
+}
+* {
+    box-sizing: border-box;
+  }
+
+.contenu {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -10px;
+    padding-top: 150px;
+    text-align: center;
+    font-family: 'Courgette';
+}
+
+.navbar {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: rgb(250, 247, 243);
+    margin: 0px;
+    font-family: 'Courgette';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #894e00;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.ligne{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.colonne{
+    flex:25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.colonne img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 900px){
+    .colonne{
+        flex:50px;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .colonne {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
