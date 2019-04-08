@@ -23,45 +23,45 @@
             </div>
         </div>
         <section class="corps">
-            <img src="images/brian-chan-12168-unsplash.jpg" alt="cupcake" class="img-1">
-            <article class="arti1">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus in,
-                    ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit amet
+            <div class="colonne">
+                <img src="images/brian-chan-12168-unsplash.jpg" alt="cupcake" class="colonne img-1">
+            </div>
+            <div class="colonne">
+                <p class="arti1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus
+                    in,
+                    ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit
+                    amet
                     odio
                     a orci pulvinar suscipit eget in dui. Nullam viverra ultrices ex at aliquam. Duis elementum
                     hendrerit
                     purus vitae congue. Maecenas ipsum neque, pulvinar ut tincidunt quis, faucibus sit amet mauris.
                     Nullam
-                    elit tortor, elementum id nulla quis, mollis rhoncus augue. Donec sagittis velit in ornare commodo.
-                    Ut
-                    quis pellentesque tortor. Etiam ipsum nisl, malesuada at nibh interdum, aliquam blandit orci. Aenean
-                    mi
-                    massa, rhoncus in massa ac, rutrum dictum ipsum. Maecenas odio quam, condimentum eget tellus ut,
-                    tincidunt viverra nisi. Curabitur volutpat est in metus laoreet, id pulvinar ligula posuere. Donec
-                    tristique augue eget libero tempus, ut tempus dolor sagittis. Sed sem dolor, condimentum vel arcu
-                    vel,
-                    porttitor fermentum augue. In sodales ornare massa et porttitor.</p>
-            </article>
-            <article class="arti2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus in,
-                    ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit amet
+                    elit tortor, elementum id nulla quis, mollis rhoncus augue. Donec sagittis velit in ornare
+                    commodo.
+                </p>
+            </div>
+        </section>
+        <section class="corps">
+            <div class="colonne">
+                <p class="arti1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus
+                    in,
+                    ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit
+                    amet
                     odio
                     a orci pulvinar suscipit eget in dui. Nullam viverra ultrices ex at aliquam. Duis elementum
                     hendrerit
                     purus vitae congue. Maecenas ipsum neque, pulvinar ut tincidunt quis, faucibus sit amet mauris.
                     Nullam
-                    elit tortor, elementum id nulla quis, mollis rhoncus augue. Donec sagittis velit in ornare commodo.
-                    Ut
-                    quis pellentesque tortor. Etiam ipsum nisl, malesuada at nibh interdum, aliquam blandit orci. Aenean
-                    mi
-                    massa, rhoncus in massa ac, rutrum dictum ipsum. Maecenas odio quam, condimentum eget tellus ut,
-                    tincidunt viverra nisi. Curabitur volutpat est in metus laoreet, id pulvinar ligula posuere. Donec
-                    tristique augue eget libero tempus, ut tempus dolor sagittis. Sed sem dolor, condimentum vel arcu
-                    vel,
-                    porttitor fermentum augue. In sodales ornare massa et porttitor.</p>
-                <br />
-            </article>
+                    elit tortor, elementum id nulla quis, mollis rhoncus augue. Donec sagittis velit in ornare
+                    commodo.
+                </p>
+            </div>
+            <div class="colonne">
+                <img src="images/joseph-gonzalez-208309-unsplash.jpg" alt="" class="colonne img-1">
+            </div>
         </section>
     </main>
 </body>
