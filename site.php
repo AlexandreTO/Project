@@ -64,6 +64,26 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="ligne">
+            <div class="col-1">
+                <h3>A propos</h3>
+                <p> <a href="#">Nous contacter</a><br />
+                    <a href="#">Qui sommes nous</a> <br/>
+                    <a href="#">Partenariat</a> 
+                </p>
+            </div>
+            <div class="col-1">
+                <h3>Mentions légales</h3>
+            </div>
+            <div class="col-1">
+                <h3>Réseaux Sociaux (Logo)</h3>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            © 2019 Copyright: EasyStockage
+        </div>
+    </footer>
 </body>
 
 </html>

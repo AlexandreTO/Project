@@ -121,6 +121,36 @@ a:hover {
     color: white;
 }
 
+footer{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+    padding: 20px;
+}
+.ligne:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-1{
+    float:left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.col-1 a{
+    text-decoration: none;
+    color: white;
+}
+.footer-copyright{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: rgba(255, 255, 255, 0.6); 
+    text-align: center;
+}
 @media screen and (max-width: 600px) {
     #navigation {
         width: auto;
@@ -162,6 +192,9 @@ a:hover {
 
     .colonne {
         width: 200px;
+    }
+    .col-1{
+        width: 100%;
     }
     
 }
