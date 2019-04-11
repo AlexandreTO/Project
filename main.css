@@ -29,12 +29,31 @@ main {
 .corps {
     display: flex;
     flex-direction: row;
+
+}
+
+.ligne {
+    flex: 50%;
+    padding: 10px;
+    width: 90%;
+}
+
+.ligne1 {
+    flex: 50%;
+    padding: 10px;
+    width: 90%;
+    order: 2;
 }
 
 .colonne {
     flex: 50%;
-    padding: 10px;
-    width: 90%;
+    margin: 15vh;
+}
+
+.colonne1 {
+    flex: 50%;
+    margin: 15vh;
+    order: 1;
 }
 
 .contenu {
@@ -61,6 +80,7 @@ main {
     margin: 0px;
     font-family: 'Courgette';
 }
+
 section {
     font-family: 'Oxygen';
     margin-left: 100px;
@@ -121,47 +141,76 @@ a:hover {
     color: white;
 }
 
-footer{
-    display:flex;
+footer {
+    display: flex;
     flex-direction: column;
     background-color: black;
-    color:white;
+    color: white;
     padding: 20px;
 }
-.ligne:after{
+
+.ligne3:after {
     content: "";
     display: table;
     clear: both;
 }
-.col-1{
-    float:left;
+
+.col-1 {
+    float: left;
     width: 33.33%;
     padding: 10px;
     text-align: center;
-
 }
 
-.col-1 a{
+.col-1 a {
     text-decoration: none;
     color: white;
+    font-family: 'Courgette';
 }
-.footer-copyright{
+
+.footer-copyright {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.541);
-    color: rgba(255, 255, 255, 0.6); 
+    color: rgba(255, 255, 255, 0.6);
     text-align: center;
 }
 
-.img-3{
+.img-3 {
     padding-top: 5%;
     height: 420px;
     width: 80%;
 }
 
-.arti3{
+.arti3 {
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -194,26 +243,55 @@ footer{
         max-width: 540px;
     }
 
+    .ligne1 {
+        order: 1;
+    }
+
     .corps {
         flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px;
 
     }
 
     .img-1 {
         width: 100%;
+        margin-left: 23px;
     }
 
     .colonne {
-        width: 200px;
+        width: 60%;
+        margin-top: 10px;
     }
-    .col-1{
+
+    .colonne1 {
+        width: 60%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        order: 2;
+    }
+
+    .col-1 {
         width: 100%;
     }
-    .img-3{
-        height: 5px;
+
+    .img-3 {
+        height: 50%;
     }
-    
+
+    .arti3 {
+        padding: 0;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
 }
+
 
 
 /* Scroll BAR DEBUT */

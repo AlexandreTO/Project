@@ -24,11 +24,11 @@
         </div>
         <section class="corps">
 
-            <div class="colonne">
-                <img src="images/brian-chan-12168-unsplash.jpg" alt="cupcake" class="colonne img-1">
+            <div class="ligne">
+                <img src="images/brian-chan-12168-unsplash.jpg" alt="cupcake" class="ligne img-1">
             </div>
             <div class="colonne">
-                <p class="arti1">
+                <span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus
                     in,
                     ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit
@@ -40,12 +40,12 @@
                     Nullam
                     elit tortor, elementum id nulla quis, mollis rhoncus augue. Donec sagittis velit in ornare
                     commodo.
-                </p>
+                </span>
             </div>
         </section>
         <section class="corps">
-            <div class="colonne">
-                <p class="arti1">
+            <div class="colonne1">
+                <span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus
                     in,
                     ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit
@@ -57,15 +57,15 @@
                     Nullam
                     elit tortor, elementum id nulla quis, mollis rhoncus augue. Donec sagittis velit in ornare
                     commodo.
-                </p>
+                </span>
             </div>
-            <div class="colonne">
-                <img src="images/joseph-gonzalez-208309-unsplash.jpg" alt="" class="colonne img-1">
+            <div class="ligne1">
+                <img src="images/joseph-gonzalez-208309-unsplash.jpg" alt="" class="ligne1 img-1">
             </div>
         </section>
 
         <section class="corps">
-            <div class="colonne">
+            <div class="colonne3">
                 <img src="rod-long-787228-unsplash.jpg" alt="" class="img-3">
                 <p class="arti3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus
@@ -81,16 +81,16 @@
                     commodo.
                 </p>
             </div>
-        
+
         </section>
     </main>
     <footer>
-        <div class="ligne">
+        <div class="ligne3">
             <div class="col-1">
                 <h3>A propos</h3>
                 <p> <a href="#">Nous contacter</a><br />
-                    <a href="#">Qui sommes nous</a> <br/>
-                    <a href="#">Partenariat</a> 
+                    <a href="#">Qui sommes nous</a> <br />
+                    <a href="#">Partenariat</a>
                 </p>
             </div>
             <div class="col-1">

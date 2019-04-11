@@ -19,15 +19,15 @@
     <main>
         <h1>Catalogue</h1>
         <br/>
-        <div class="ligne">
-            <div class="colonne">
+        <div class="row">
+            <div class="column">
                 <img src="images/image.png">
                 <img src="images/logo.png">
             </div>
-            <div class="colonne">
+            <div class="column">
                 <img src="images/brian-chan-12168-unsplash.jpg">
             </div>
-            <div class="colonne">
+            <div class="column">
                 <img src="images/jordane-mathieu-539949-unsplash.jpg" >
             </div>
         </div>
