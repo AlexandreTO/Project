@@ -63,6 +63,26 @@
                 <img src="images/joseph-gonzalez-208309-unsplash.jpg" alt="" class="colonne img-1">
             </div>
         </section>
+
+        <section class="corps">
+            <div class="colonne">
+                <img src="rod-long-787228-unsplash.jpg" alt="" class="img-3">
+                <p class="arti3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien sagittis, egestas lectus
+                    in,
+                    ultricies purus. Donec ipsum felis, rhoncus non ultrices id, vehicula aliquam quam. Nulla sit
+                    amet
+                    odio
+                    a orci pulvinar suscipit eget in dui. Nullam viverra ultrices ex at aliquam. Duis elementum
+                    hendrerit
+                    purus vitae congue. Maecenas ipsum neque, pulvinar ut tincidunt quis, faucibus sit amet mauris.
+                    Nullam
+                    elit tortor, elementum id nulla quis, mollis rhoncus augue. Donec sagittis velit in ornare
+                    commodo.
+                </p>
+            </div>
+        
+        </section>
     </main>
     <footer>
         <div class="ligne">

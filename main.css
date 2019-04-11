@@ -151,6 +151,19 @@ footer{
     color: rgba(255, 255, 255, 0.6); 
     text-align: center;
 }
+
+.img-3{
+    padding-top: 5%;
+    height: 420px;
+    width: 80%;
+}
+
+.arti3{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 @media screen and (max-width: 600px) {
     #navigation {
         width: auto;
@@ -195,6 +208,9 @@ footer{
     }
     .col-1{
         width: 100%;
+    }
+    .img-3{
+        height: 5px;
     }
     
 }
