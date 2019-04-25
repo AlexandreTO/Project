@@ -87,13 +87,13 @@ a:hover {
 }
 
 @media screen and (max-width: 900px){
-    .colonne{
+    .column{
         flex:50px;
         max-width: 50%;
     }
 }
 @media screen and (max-width: 600px) {
-    .colonne {
+    .column {
       flex: 100%;
       max-width: 100%;
     }

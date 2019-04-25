@@ -22,7 +22,7 @@
         <div class="row">
             <div class="column">
                 <img src="images/image.png">
-                <img src="images/logo.png">
+                <img src="images/dilyara-garifullina-1150064-unsplash.jpg" alt="">
             </div>
             <div class="column">
                 <img src="images/brian-chan-12168-unsplash.jpg">
