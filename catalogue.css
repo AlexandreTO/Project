@@ -26,7 +26,9 @@ main {
     text-align: center;
     font-family: 'Courgette';
 }
-
+.title{
+    font-size:50px;
+}
 .navbar {
     display: flex;
     -ms-flex-wrap: wrap;

@@ -15,7 +15,7 @@
     <header class="navbar ">
         <?php include("entete.php");?>
     </header>
-
+<!-- Catalogue avec des images responsives. -->
     <main>
         <h1>Catalogue</h1>
         <br/>

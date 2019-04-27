@@ -1,5 +1,7 @@
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction()
+};
 
 // Get the navbar
 var navbar = document.getElementById("navigation");
@@ -13,5 +15,13 @@ function myFunction() {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
+  }
+}
+function burgerMenu() {
+  var x = document.getElementById("navbar1");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
   }
 }

@@ -1,3 +1,4 @@
+<?php $tab='Accueil'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +8,7 @@
     <title>Accueil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="all" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="main.js"></script>
 </head>
 
@@ -18,8 +20,9 @@
     <main>
         <div class="view header-img">
             <div class="contenu">
-                <h1>EasyStockage</h1>
-                <h3>La magie de la gourmandise</h3>
+                <p class="title">EasyStockage
+                    <br/>La magie de la gourmandise</p>
+                <!--  -->
             </div>
         </div>
         <section class="corps">
@@ -97,7 +100,7 @@
                 <h3>Mentions légales</h3>
             </div>
             <div class="col-1">
-                <h3>Réseaux Sociaux (Logo)</h3>
+                <h3>Réseaux Sociaux</h3>
             </div>
         </div>
         <div class="footer-copyright">
