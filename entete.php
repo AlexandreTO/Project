@@ -6,6 +6,6 @@
     <a class="nav-link" href="#">Services</a>
     <a class="nav-link" href="#">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars"></i></a>
 </nav>
 <br />

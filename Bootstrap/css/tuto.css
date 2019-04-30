@@ -1,0 +1,25 @@
+body {
+    padding-top: 10px;
+  }
+  [class*="col-"], footer {
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 6px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .active{
+    color:orange;
+  }
+
+.intro-2 {
+    background: url("../image.png")no-repeat center center;
+    background-size: cover;
+}
+html,
+body,
+header,
+.view {
+
+    height: 80%;
+}
