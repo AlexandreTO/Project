@@ -1,11 +1,24 @@
-<nav class="navbar fixed-top bg-light" id="navbar1">
-    <!-- alignement centre -->
-    <a class="nav-link" href="site.php">Accueil</a>
-    <a class="nav-link" href="Catalogue.php">Catalogue</a>
-    <!-- <img src="images/logo.png" alt="logo" class ="logo" width="20" height="20"> -->
-    <a class="nav-link" href="#">Services</a>
-    <a class="nav-link" href="#">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-        <i class="fa fa-bars"></i></a>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar navbar-default">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="site.php">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Catalogue.php">Catalogue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Services.php">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Connexion</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
-<br />

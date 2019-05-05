@@ -1,0 +1,84 @@
+body {
+  background-color: rgba(242, 152, 152, 0.5);
+}
+html,
+body,
+header,
+.view {
+  height: 90%;
+}
+
+.intro {
+  background: url("images/header.png");
+  /*Parallax*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar-default {
+  transition: 500ms ease;
+}
+.navbar-default.scrolled {
+  background: rgb(242, 152, 152);
+}
+.img1 {
+  width: 100%;
+}
+.container2 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+.col-1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  text-align: center;
+}
+
+.col-1 a {
+  text-decoration: none;
+  color: white;
+  font-family: "Courgette";
+}
+.footer-copyright {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.541);
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .col-1 {
+    width: 100%;
+  }
+  .m-1 {
+    margin-bottom: 2.4em !important;
+  }
+}
+@media (min-width: 576px) {
+  .container2 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container2 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container2 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container2 {
+    max-width: 1140px;
+  }
+}
