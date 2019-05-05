@@ -32,6 +32,7 @@
             </div>
         </div>
     </header>
+
     <main class="py-5">
         <div class="container2">
             <div class="row align-items-center">
@@ -78,11 +79,34 @@
                     leo
                     convallis volutpat
                 </div>
-                <div class="col-sm-5 m-1">
-                    <img src="images/joseph-gonzalez-208309-unsplash.jpg" alt="" class="img1">
+                <div class="col-sm-5 m-1 order-first order-lg-2">
+                    <img src="images/joseph-gonzalez-208309-unsplash.jpg" alt="" class="img1 ">
                 </div>
             </div>
         </div>
+        <br>
+        <br><br>
+        <div class="container">
+            <div class="row align-items-center">
+                <img src="images/rod-long-787228-unsplash.jpg" alt="" class="img2">
+            </div>
+            <div class=" mx-3 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tempor iaculis. Sed rutrum
+                finibus
+                nulla,
+                venenatis porttitor libero pretium id. Nam porttitor quam in dui facilisis sollicitudin. Proin
+                tempus
+                dapibus
+                nulla, eget facilisis orci varius nec. Vivamus dui libero, hendrerit vitae lorem vel, facilisis
+                fringilla
+                arcu.
+                Morbi faucibus vulputate tristique. Integer id ipsum justo. Integer at quam turpis. Donec tincidunt
+                elit sed
+                felis varius auctor. Curabitur nec malesuada ipsum, venenatis molestie turpis. Curabitur fringilla
+                ligula eu
+                leo
+                convallis volutpat
+            </div>
     </main>
     <!-- Footer -->
     <?php include("footer.php"); ?>

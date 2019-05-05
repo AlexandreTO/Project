@@ -13,6 +13,9 @@
                     <a class="nav-link" href="Catalogue.php">Catalogue</a>
                 </li>
                 <li class="nav-item">
+                    <img src="images/logo.png" alt="" width="50px" height="50px">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="Services.php">Service</a>
                 </li>
                 <li class="nav-item">
