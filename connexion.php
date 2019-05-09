@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<?php
+ //session_start()?>
+
+>>>>>>> 5eae50d84037869e82a99b6c138fadb5850a77d4
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -20,40 +26,24 @@
 </head>
 
 <body>
-    <header>
-        <?php include("entete.php"); ?>
-        <div class="view intro2">
-            <div class="mask flex-center">
-                <div class="container text-center white-text">
-                    <h1 class="h1FadeIn">Easy Stockage</h1>
-                    <h2 class="h1FadeIn">La magie de la gourmandise</h2>
-                </div>
-            </div>
+    <nav><?php include("entete.php"); ?></nav>
+    <!-- Formulaires de contact -->
+    <div class="view intro2">
+        <div class="mask flex-center">
         </div>
-    </header>
-        <!-- Formulaires de contact -->
-        <main>
 
+        <main class="text-center">
             <h2>Connexion</h2>
 
-            <form action="" class="login">
+            <form action="" class="login" method="post">
                 <input type="text" name="Identifiant" id="identifiant" placeholder="Identifiant"><br><br>
-                
+
                 <input type="password" name="password" id="password" placeholder="mot de passe"><br><br>
 
                 <input type="submit" id="connexion" value="Connexion"><br><br>
-
-
-
-
-
-
-                
-
-                
-
             </form>
-        </main>
+    </div>
+    </main>
 </body>
 
 </html>
