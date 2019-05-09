@@ -1,5 +1,5 @@
 <?php
- session_start()?>
+ //session_start()?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -26,22 +26,21 @@
 <body>
     <nav><?php include("entete.php"); ?></nav>
     <!-- Formulaires de contact -->
-    <main class="text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-11">
-                    <h2>Connexion</h2>
-
-                    <form action="" class="login" method="post">
-                        <input type="text" name="Identifiant" id="identifiant" placeholder="Identifiant"><br><br>
-
-                        <input type="password" name="password" id="password" placeholder="mot de passe"><br><br>
-
-                        <input type="submit" id="connexion" value="Connexion"><br><br>
-                    </form>
-                </div>
-            </div>
+    <div class="view intro">
+        <div class="mask flex-center">
         </div>
+
+        <main class="text-center">
+            <h2>Connexion</h2>
+
+            <form action="" class="login" method="post">
+                <input type="text" name="Identifiant" id="identifiant" placeholder="Identifiant"><br><br>
+
+                <input type="password" name="password" id="password" placeholder="mot de passe"><br><br>
+
+                <input type="submit" id="connexion" value="Connexion"><br><br>
+            </form>
+    </div>
     </main>
 </body>
 
