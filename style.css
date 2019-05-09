@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Courgette");
 body {
-  background-color: rgba(242, 152, 152, 0.5);
+  background-color: rgb(240, 239, 239);
   padding-top:75px;
 }
 html,
@@ -28,12 +28,15 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.intro2{
+.connect{
   background: url("mockaroon-1333674-unsplash.jpg");
   /*Parallax*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.navbar{
+  background: rgba(242, 152, 152, 0.8);
 }
 .navbar-default {
   transition: 500ms ease;
@@ -75,6 +78,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
 }
+
 form{
   padding-left: 50px;
 }
