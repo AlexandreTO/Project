@@ -1,3 +1,6 @@
+<?php
+ session_start()?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,7 +12,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="Bootstrap/css/bootstrap.css" />
     <link href="Bootstrap/css/mdb.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
     <script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
     <script src="Bootstrap/js/popper.min.js"></script>
@@ -20,32 +24,25 @@
 </head>
 
 <body>
-    <header>
-        <?php include("entete.php"); ?>
-    </header>
-        <!-- Formulaires de contact -->
-        <main>
+    <nav><?php include("entete.php"); ?></nav>
+    <!-- Formulaires de contact -->
+    <main class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-11">
+                    <h2>Connexion</h2>
 
-            <h2>Connexion</h2>
+                    <form action="" class="login" method="post">
+                        <input type="text" name="Identifiant" id="identifiant" placeholder="Identifiant"><br><br>
 
-            <form action="" class="login">
-                <input type="text" name="Identifiant" id="identifiant" placeholder="Identifiant"><br><br>
-                
-                <input type="password" name="password" id="password" placeholder="mot de passe"><br><br>
+                        <input type="password" name="password" id="password" placeholder="mot de passe"><br><br>
 
-                <input type="submit" id="connexion" value="Connexion"><br><br>
-
-
-
-
-
-
-                
-
-                
-
-            </form>
-        </main>
+                        <input type="submit" id="connexion" value="Connexion"><br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

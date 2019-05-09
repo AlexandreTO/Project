@@ -21,17 +21,15 @@
 </head>
 
 <body>
-    <header>
-        <?php include("entete.php"); ?>
-        <div class="view intro">
-            <div class="mask flex-center">
-                <div class="container text-center white-text">
-                    <h1 class="h1FadeIn">Easy Stockage</h1>
-                    <h2 class="h1FadeIn">La magie de la gourmandise</h2>
-                </div>
+    <?php include("entete.php"); ?>
+    <div class="view intro">
+        <div class="mask flex-center">
+            <div class="container text-center white-text">
+                <h1 class="h1FadeIn">Easy Stockage</h1>
+                <h2 class="h1FadeIn">La magie de la gourmandise</h2>
             </div>
         </div>
-    </header>
+    </div>
 
     <main class="py-5">
         <div class="container2">
