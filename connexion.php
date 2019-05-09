@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
 <?php
  //session_start()?>
 
->>>>>>> 5eae50d84037869e82a99b6c138fadb5850a77d4
 <!DOCTYPE html>
 <html lang="fr">
 
