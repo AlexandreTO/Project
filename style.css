@@ -4,6 +4,7 @@ body {
 }
 html,
 body,
+header,
 .view {
   height: 90%;
 }
@@ -21,6 +22,13 @@ footer {
 
 .intro {
   background: url("images/header.png");
+  /*Parallax*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro2{
+  background: url("mockaroon-1333674-unsplash.jpg");
   /*Parallax*/
   background-position: center;
   background-repeat: no-repeat;

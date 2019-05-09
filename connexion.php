@@ -22,6 +22,14 @@
 <body>
     <header>
         <?php include("entete.php"); ?>
+        <div class="view intro2">
+            <div class="mask flex-center">
+                <div class="container text-center white-text">
+                    <h1 class="h1FadeIn">Easy Stockage</h1>
+                    <h2 class="h1FadeIn">La magie de la gourmandise</h2>
+                </div>
+            </div>
+        </div>
     </header>
         <!-- Formulaires de contact -->
         <main>
