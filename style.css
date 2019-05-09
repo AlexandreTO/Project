@@ -67,6 +67,9 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
 }
+form{
+  padding-left: 50px;
+}
 @media screen and (max-width: 600px) {
   .col-1 {
     width: 100%;
