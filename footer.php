@@ -6,7 +6,7 @@
                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4">A propos</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Nous contacter</a>
+                        <a href="contact.php">Nous contacter</a>
                     </li>
                     <li>
                         <a href="#!">Qui somme nous</a>

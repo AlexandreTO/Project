@@ -11,7 +11,8 @@ header,
 }
 
 header,
-footer {
+footer,
+nav {
   font-family: "Courgette";
 }
 .active {
