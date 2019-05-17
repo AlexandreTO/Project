@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="Bootstrap/css/bootstrap.css" />
     <link href="Bootstrap/css/mdb.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
     <script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
     <script src="Bootstrap/js/popper.min.js"></script>
@@ -22,15 +23,11 @@
     <!-- DANS CET ORDRE -->
 </head>
 
-<body>
+<body class="connect">
     <nav><?php include("entete.php"); ?></nav>
     <!-- Formulaires de contact -->
-    <div class="view intro2">
-        <div class="mask flex-center">
-        </div>
 
-        <main class="text-center">
-            <h2>Connexion</h2>
+    <main class="text-center">
 
             <form>
                 <div class="form-group">
