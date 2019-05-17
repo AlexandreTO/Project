@@ -32,20 +32,22 @@
                 77144 Montévrain
             </div>
         </div>
-        <br/>
-            <div class="row text-center">
-                <div class="col">
-                    <h4>Téléphone</h4>
-                     Tél: 01 08 12 32 05<br />
-                     Fax: 08 26 95 12 74<br/>
-                </div>
-                <div class="col">
-                    <h4>Email</h4>
-                    Vous avez des questions ou vous souhaitez nous contacter ?<br />
-                    <a HREF="mailto:support@easystockage.com">support@easystockage.com</a>
-                </div>
+        <br />
+        <div class="row text-center">
+            <div class="col">
+                <h4>Téléphone</h4>
+                Tél: 01 08 12 32 05<br />
+                Fax: 08 26 95 12 74<br />
             </div>
-            <br>
+            <div class="col">
+                <h4>Email</h4>
+                Vous avez des questions ou vous souhaitez nous contacter ?<br />
+                <a HREF="mailto:support@easystockage.com">support@easystockage.com</a>
+            </div>
+        </div>
+        <br>
     </div>
     <!-- OItégrer l'image google map -->
 </body>
+
+</html>

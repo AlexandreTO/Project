@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Courgette");
+
 body {
-  background-color: rgb(240, 239, 239);
-  padding-top:75px;
+  background-color: #fff;
+  padding-top: 75px;
 }
+
 html,
 body,
 header,
@@ -15,11 +17,13 @@ footer,
 nav {
   font-family: "Courgette";
 }
+
 .active {
   color: #894e00;
 }
+
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
-  color:black;
+  color: black;
 }
 
 .intro {
@@ -29,25 +33,31 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.connect{
+
+.connect {
   background: url("mockaroon-1333674-unsplash.jpg");
   /*Parallax*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.navbar{
+
+.navbar {
   background: rgba(242, 152, 152, 0.8);
 }
+
 .navbar-default {
   transition: 500ms ease;
 }
+
 .navbar-default.scrolled {
-  background:rgba(242, 152, 152, 0.8);
+  background: rgba(242, 152, 152, 0.8);
 }
+
 .img1 {
   width: 100%;
 }
+
 .img2 {
   width: 100%;
   margin-bottom: 10px;
@@ -73,6 +83,7 @@ nav {
   color: white;
   font-family: "Courgette";
 }
+
 .footer-copyright {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.541);
@@ -80,28 +91,43 @@ nav {
   text-align: center;
 }
 
-form{
+form {
   padding-left: 50px;
 }
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+
 @media screen and (max-width: 600px) {
   .col-1 {
     width: 100%;
   }
+
   .m-1 {
     margin-bottom: 2.4em !important;
   }
+
   .order-first {
     -ms-flex-order: 13;
     order: 13;
   }
+
   .order-lg-2 {
     -ms-flex-order: -1;
     order: -1;
   }
-  body{
-    padding-top:61px;
+
+  body {
+    padding-top: 61px;
   }
 }
+
 @media (min-width: 576px) {
   .container2 {
     max-width: 540px;
