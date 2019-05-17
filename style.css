@@ -11,7 +11,7 @@ header,
 }
 
 header,
-footer {
+footer,nav,form {
   font-family: "Courgette";
 }
 .active {
@@ -28,13 +28,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.connect{
-  background: url("mockaroon-1333674-unsplash.jpg");
-  /*Parallax*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .navbar{
   background: rgba(242, 152, 152, 0.8);
 }
@@ -78,10 +72,34 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
 }
-
 form{
-  padding-left: 50px;
+  border-style:solid;
+  border-color: #f29898;
+  border-radius: 25px;
+  padding: 15%;
+  margin: 10%;
 }
+input{
+  border-radius: 15px;
+  padding-left:5px;
+  padding-right: 55px;
+  margin: 2%;
+  border-color: #f29898; 
+}
+#Connexion{
+  height: auto;
+}
+#connexion{
+  padding-left: 50px;
+  background-color: #f29898;
+}
+h3{
+  margin: 5%;
+}
+h1{
+  margin-bottom: 10%;
+}
+
 @media screen and (max-width: 600px) {
   .col-1 {
     width: 100%;
