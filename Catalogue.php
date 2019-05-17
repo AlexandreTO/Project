@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Accueil</title>
+    <title>Catalogue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="Bootstrap/css/bootstrap.css" />
     <link href="Bootstrap/css/mdb.css" rel="stylesheet" />
