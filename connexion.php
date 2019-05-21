@@ -25,7 +25,7 @@
 <body id="Connexion">
     <nav><?php include("entete.php"); ?></nav>
     <!-- Formulaires de contact -->
-    <div class="view intro2 container align-content-center">
+    <div class="intro2 container align-content-center">
        
 
         <main class="text-center">
@@ -38,7 +38,7 @@
 
                 <input type="text" name="Identifiant" id="identifiant" placeholder="Identifiant"><br><br>
 
-                <input type="password" name="password" id="password" placeholder="Mot de passe"><br>
+                <input type="password" name="password" id="password" placeholder="Mot de passe" required><br>
 
                 <a href="#">Mot de passe oublié?</a><br><br>
 
