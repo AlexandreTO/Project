@@ -27,14 +27,13 @@
             */
               try {
                 $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', 'root');
+                // $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
               } 
               catch (Exception $e) {
                   die('Erreur: ' . $e->getMessage());
               }
             ?>
     <?php 
-
-
         $nom= $_POST['nom'];
         $prenom= $_POST['prenom'];
         $date= $_POST['date'];
@@ -57,14 +56,28 @@
         echo $user;
         echo '<br>';
         try{
-            $response  = $bdd ->query("insert into clients(Nom,Prenom,Utilisateur,DateNaissance,Adresse,CodePostal,Email)
-             values('$nom','$prenom','$user','$date','$adresse','$code_postal','$email')");
-            echo('Insertion réussite');
+            // On compare le mail entré à ceux qui sont présents dans la base de données avant de décider de l'intégrer dans la BDD
+            $req = $bdd -> prepare("select Email from clients where Email = ?");
+            $req -> execute(array($email));
+            $row = $req -> rowCount();
+            printf($row);
+            echo '<br>';
+
+            // Si le mail n'est pas présent , il va être ensuite ajouté dans la base de données.
+            $response  = $bdd ->prepare("insert into clients(Nom,Prenom,Utilisateur,DateNaissance,Adresse,CodePostal,Email)
+            values(?,?,?,?,?,?,?)");
+            $response -> execute(array($nom,$prenom,$user,$date,$adresse,$code_postal,$email));
+            if ($row == 0) {
+                echo "Insertion réussie";
+            }
+            else {
+                echo "Le mail est déja utilisé";
+            } 
+            $response -> closeCursor();
         }
-        catch(PDOException $e){
-            die("Erreur : $sql. " . $e->getMessage());
+        catch(Exception $e){
+            die($e-> getMessage());
         }
-        $response -> closeCursor();
     ?>
 </body>
 
