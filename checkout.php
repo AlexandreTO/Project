@@ -33,8 +33,6 @@
               }
             ?>
     <?php 
-
-
         $nom= $_POST['nom'];
         $prenom= $_POST['prenom'];
         $date= $_POST['date'];
@@ -58,13 +56,27 @@
         echo '<br>';
         try{
             $response  = $bdd ->query("insert into clients(Nom,Prenom,Utilisateur,DateNaissance,Adresse,CodePostal,Email)
-             values('$nom','$prenom','$user','$date','$adresse','$code_postal','$email')");
-            echo('Insertion réussite');
+            values('$nom','$prenom','$user','$date','$adresse','$code_postal','$email')");
+/*              $verif = $bdd -> query('select email from clients');
+            while ($test = $verif->fetch()) {
+                if($test == $email){
+                    printf("Existe");
+                }
+                else {
+                    printf("N'existe pas");
+                }
+            } */
+            $r = array();
+            $result = $bdd -> query("select mail from clients");
+            while ($row = mysqli_fetch_assoc($result)) {
+                $r[] = $row;
+            }
+            echo $r[1];
+            throw new PDOException("Mail déja existant");   
         }
         catch(PDOException $e){
-            die("Erreur : $sql. " . $e->getMessage());
+            die($e-> getMessage());
         }
-        $response -> closeCursor();
     ?>
 </body>
 
