@@ -86,7 +86,6 @@ input{
   margin: 2%;
   border-color: #f29898; 
 }
-Testing
 input:invalid+span:after {
   content: '✖';
   padding-left: 5px;
@@ -95,7 +94,7 @@ input:invalid+span:after {
 input:valid+span:after {
   content: '✓';
   padding-left: 5px;
-}master
+}
 #Connexion{
   height: auto;
 }
