@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -20,6 +21,7 @@
 </head>
 
 <body>
+    <?php include("entete.php"); ?>
         <?php
             /*
             Code afin de vérifier si on est connecté à la BDD
@@ -36,29 +38,43 @@
         <?php
         //Récupération des identifiants
             $id = $_POST['identifiant'];
-            echo $id;
-            echo "<br>";
-            echo $_POST['MDP'];
-            echo "<br>";
             $req = $bdd ->prepare("select Utilisateur,MDP from clients where Utilisateur = :id");
             $req ->execute(array('id' => $id));
             $resultat = $req -> fetch();
             
         // Récupération du mot de passe et comparaison avec le mdp hashé dans la base de données.
-            $isPwdCorrect = password_verify($_POST['MDP'],$resultat['MDP']);
+            $isPwdCorrect = password_verify($_POST['mdp'],$resultat['MDP']);
             if (!$resultat) {
                 echo "Mauvais mot de passe ou identifiant !";
+                header('refresh : 5 ; url=connexion.php');
             }
             else {
                 if ($isPwdCorrect) {
+                    // Création de la session si les entrées sont correctes
                     session_start();
-                    $_SESSION['identifiant'] = $resultat[$id];
-                    echo "Vous êtes connecté !";
+                    $_SESSION['identifiant'] = $_POST['identifiant'];
+                    header('location:site_membre.php'); //renvoie vers le site réservé aux membres
                 }
                 else {
                     echo "Mauvais mot de passe ou identifiant !";
                 }
             } 
         ?>
+        <p> Vous allez être redirigé dans <span id="counter">5</span> seconde(s)</p>
+        <!-- Comptes à rebours -->
+        <script type="text/javascript">
+            function countdown() {
+                var i = document.getElementById('counter');
+                if (parseInt(i.innerHTML)<=0) {
+                    location.href = 'connexion.php';
+             }
+            if (parseInt(i.innerHTML)!=0) {
+                i.innerHTML = parseInt(i.innerHTML)-1;
+                }
+            }
+            setInterval(function(){ countdown(); },1000);
+        </script>
+        
 
 </body>
+</html>
