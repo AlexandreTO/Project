@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <nav><?php include("entete.php"); ?></nav>
     <main>
         <?php
             /*
@@ -58,6 +59,11 @@
                                 Entrez un nom d'utilisateur
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom01">Mot de passe</label>
+                        <input type="password" name="password" id="validationCustom01" class="form-control"
+                            minlenght="8" required>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="validationBirthday">Date de naissance</label>

@@ -1,5 +1,5 @@
 <?php
- //session_start()?>
+ session_start()?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -26,27 +26,25 @@
     <nav><?php include("entete.php"); ?></nav>
     <!-- Formulaires de contact -->
     <div class="intro2 container align-content-center">
-       
-
         <main class="text-center">
 
-            <form action="" class="login" method="post">
+            <form action="verif.php" class="login" method="post">
 
                 <H1>Espace Membre</H1>            
 
                 <H3>Connexion</H3>
 
-                <input type="text" name="Identifiant" id="identifiant" placeholder="Identifiant"><br><br>
+                <input type="text" name="identifiant" id="identifiant" placeholder="Identifiant" required><br>
 
-                <input type="password" name="password" id="password" placeholder="Mot de passe" required><br>
+                <input type="password" name="mdp" id="password" placeholder="Mot de passe" required><br>
 
-                <a href="#">Mot de passe oublié?</a><br><br>
+                <a href="#">Mot de passe oublié?</a><br>
 
-                <input type="submit" id="connexion" value="Connexion"><br><br>
+                <input type="submit" id="connexion" value="Connexion"><br>
 
-                <input type="checkbox" id="bouton" value="Se souvenir de moi">Se souvenir de moi <br><br><br><br>
+                <input type="checkbox" id="bouton" value="Se souvenir de moi">Se souvenir de moi <br>
 
-               <div id="membre">Nouveau Membre <a href="#">Inscrivez-vous?</a></div>
+               <div id="membre">Nouveau Membre ?<a href="test_form.php"><br>Inscrivez-vous !</a></div>
             </form>
     </div>
     </main>

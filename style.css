@@ -76,8 +76,10 @@ form{
   border-style:solid;
   border-color: #f29898;
   border-radius: 25px;
-  padding: 15%;
-  margin: 10%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 input{
   border-radius: 15px;
@@ -106,9 +108,9 @@ input:valid+span:after {
 h3{
   margin: 5%;
 }
-h1{
+/* h1{
   margin-bottom: 10%;
-}
+} */
 
 @media screen and (max-width: 600px) {
   .col-1 {
@@ -124,6 +126,10 @@ h1{
   .order-lg-2 {
     -ms-flex-order: -1;
     order: -1;
+  }
+  input{
+    width: 100%;
+    margin-bottom: 0;
   }
   body{
     padding-top:61px;

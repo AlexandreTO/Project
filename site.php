@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if (isset($_SESSION['identifiant']))
+    {
+        echo 'Bonjour ' . $_SESSION['identifiant'];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
