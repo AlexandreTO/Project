@@ -42,12 +42,12 @@
         $user = $_POST['utilisateur'];
         $mdp = $_POST['password'];
         $pass_hache = password_hash($mdp,PASSWORD_DEFAULT);
-        echo $pass_hache;
+        echo $date;
         try{
             // On compare le mail entré à ceux qui sont présents dans la base de données avant de décider de l'intégrer dans la BDD
             $req = $bdd -> prepare("select Email from clients where Email = ?");
             $req -> execute(array($email));
-            $row = $req -> rowCount(); //renvoie 0 ou 1 si la variable $req est présent dans la base de données ou non.
+            $row = $req -> rowCount(); 
             echo '<br>';
             $req1 = $bdd -> prepare("select Utilisateur from clients where Utilisateur =?");
             $req1 -> execute(array($user));
@@ -65,20 +65,35 @@
             elseif ($row == 1 && $row1 == 0) {
                 echo "Le mail est déja utilisé";
                 $req -> closeCursor();
+                header("refresh: 5 ; url=connexion.php");
             }
             elseif ($row == 0 && $row1 == 1) {
                 echo "Le nom d'utilisateur est déja utilisé";
                 $req1 -> closeCursor();
+                header("refresh: 5 ; url=connexion.php");
             }
 
         }
         catch(Exception $e){
             die($e-> getMessage());
         }
+        
     ?>
-    <form action="connexion.php" method="post">
-        <button class="btn btn-primary" type="submit">Retour</button>
-    </form>
+    <p> Vous allez être redirigé dans <span id="counter">5</span> seconde(s)</p>
+        <!-- Comptes à rebours -->
+    <script type="text/javascript">
+        function countdown() {
+            var i = document.getElementById('counter');
+            if (parseInt(i.innerHTML)<=0) {
+                location.href = 'connexion.php';
+            }
+            if (parseInt(i.innerHTML)!=0) {
+                i.innerHTML = parseInt(i.innerHTML)-1;
+            }
+        }
+        setInterval(function(){ countdown(); },1000);
+    </script>
+        
 </body>
 
 </html>

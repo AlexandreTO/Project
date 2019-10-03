@@ -28,7 +28,7 @@
             */
               try {
                 $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', 'root');
-                // $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
               } 
               catch (Exception $e) {
                   die('Erreur: ' . $e->getMessage());
@@ -37,28 +37,36 @@
 
         <?php
         //Récupération des identifiants
+            
             $id = $_POST['identifiant'];
             $req = $bdd ->prepare("select Utilisateur,MDP from clients where Utilisateur = :id");
             $req ->execute(array('id' => $id));
             $resultat = $req -> fetch();
-            
-        // Récupération du mot de passe et comparaison avec le mdp hashé dans la base de données.
-            $isPwdCorrect = password_verify($_POST['mdp'],$resultat['MDP']);
-            if (!$resultat) {
-                echo "Mauvais mot de passe ou identifiant !";
-                header('refresh : 5 ; url=connexion.php');
+            $req1 = $bdd -> prepare("select count(Utilisateur)from clients where Utilisateur = :user");
+            $req1 -> execute(array('user' => $id));
+            $res1 = $req1 ->fetchColumn();
+            if ($res1 == 0) {
+                echo " <p> Test</p>";
+                header("refresh:5; url=site.php");
             }
-            else {
-                if ($isPwdCorrect) {
-                    // Création de la session si les entrées sont correctes
-                    session_start();
-                    $_SESSION['identifiant'] = $_POST['identifiant'];
-                    header('location:site_membre.php'); //renvoie vers le site réservé aux membres
+            else{
+        // Récupération du mot de passe et comparaison avec le mdp hashé dans la base de données.
+                $isPwdCorrect = password_verify($_POST['mdp'],$resultat['MDP']);
+                if (!$resultat) {
+                    echo $res1;
+                    echo "Mauvais mot de passe!";
+                    header('refresh: 5 ; url=connexion.php');
+                    $req -> closeCursor();
                 }
                 else {
-                    echo "Mauvais mot de passe ou identifiant !";
+                    if ($isPwdCorrect) {
+                        // Création de la session si les entrées sont correctes
+                        session_start();
+                        $_SESSION['identifiant'] = $id;
+                        header('location:site_membre.php'); //renvoie vers le site réservé aux membres
+                    }   
                 }
-            } 
+            }
         ?>
         <p> Vous allez être redirigé dans <span id="counter">5</span> seconde(s)</p>
         <!-- Comptes à rebours -->
