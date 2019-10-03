@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-
     <script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
     <script src="Bootstrap/js/popper.min.js"></script>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
@@ -19,7 +18,6 @@
     <script src="main.js"></script>
     <!-- DANS CET ORDRE -->
 </head>
-
 <body>
     <nav><?php include("entete.php"); ?></nav>
     <?php
@@ -42,18 +40,18 @@
         $code_postal= $_POST['code_postal'];
         $email = $_POST['email'];
         $user = $_POST['utilisateur'];
-        $pass_hache = password_hash($_POST['password'],PASSWORD_DEFAULT);
+        $mdp = $_POST['password'];
+        $pass_hache = password_hash($mdp,PASSWORD_DEFAULT);
         echo $pass_hache;
         try{
             // On compare le mail entré à ceux qui sont présents dans la base de données avant de décider de l'intégrer dans la BDD
             $req = $bdd -> prepare("select Email from clients where Email = ?");
             $req -> execute(array($email));
-            $row = $req -> rowCount();
-
+            $row = $req -> rowCount(); //renvoie 1 si le mail entré est présent dans la base de données ou non.
             echo '<br>';
             $req1 = $bdd -> prepare("select Utilisateur from clients where Utilisateur =?");
             $req1 -> execute(array($user));
-            $row1 = $req1 -> rowCount();    
+            $row1 = $req1 -> rowCount();    //renvoie 1 si le nom d'utilisateur entré est présent dans la base de données ou non.
             echo '<br>';
             if ($row == 0 && $row1 == 0) {
 

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,7 +22,7 @@
 
 <body>
     <header>
-        <?php include("entete.php"); ?>
+        <?php include("entete_membre.php"); ?>
         <div class="view intro">
             <div class="mask flex-center">
                 <div class="container text-center white-text">
