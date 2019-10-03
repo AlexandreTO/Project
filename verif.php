@@ -55,7 +55,7 @@
                 if (!$resultat) {
                     echo $res1;
                     echo "Mauvais mot de passe!";
-                    header('refresh: 5 ; url=connexion.php');
+                    header('refresh:5 ; url=connexion.php');
                     $req -> closeCursor();
                 }
                 else {

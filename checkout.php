@@ -48,10 +48,11 @@
             $req = $bdd -> prepare("select Email from clients where Email = ?");
             $req -> execute(array($email));
             $row = $req -> rowCount(); 
+            $row = $req -> rowCount(); //renvoie 1 si le mail entré est présent dans la base de données ou non.
             echo '<br>';
             $req1 = $bdd -> prepare("select Utilisateur from clients where Utilisateur =?");
             $req1 -> execute(array($user));
-            $row1 = $req1 -> rowCount();    
+            $row1 = $req1 -> rowCount();    //renvoie 1 si le nom d'utilisateur entré est présent dans la base de données ou non.
             echo '<br>';
             if ($row == 0 && $row1 == 0) {
 
