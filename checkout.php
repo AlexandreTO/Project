@@ -46,7 +46,6 @@
             // On compare le mail entré à ceux qui sont présents dans la base de données avant de décider de l'intégrer dans la BDD
             $req = $bdd -> prepare("select Email from clients where Email = ?");
             $req -> execute(array($email));
-            $row = $req -> rowCount(); 
             $row = $req -> rowCount(); //renvoie 1 si le mail entré est présent dans la base de données ou non.
             echo '<br>';
             $req1 = $bdd -> prepare("select Utilisateur from clients where Utilisateur =?");
