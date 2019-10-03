@@ -28,7 +28,7 @@
                     <a class="nav-link" href="deconnexion.php">Deconnexion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Bonjour <?php echo $_SESSION['identifiant']."!" ?></a>
+                    <a class="nav-link" href="#">Bonjour <?php echo htmlspecialchars($_SESSION['identifiant'])."!" ?></a>
                 </li>
             </ul>
         </div>

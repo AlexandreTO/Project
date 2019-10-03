@@ -42,7 +42,6 @@
         $user = $_POST['utilisateur'];
         $mdp = $_POST['password'];
         $pass_hache = password_hash($mdp,PASSWORD_DEFAULT);
-        echo $date;
         try{
             // On compare le mail entré à ceux qui sont présents dans la base de données avant de décider de l'intégrer dans la BDD
             $req = $bdd -> prepare("select Email from clients where Email = ?");
