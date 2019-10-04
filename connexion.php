@@ -44,7 +44,7 @@
 
                 <input type="checkbox" id="bouton" value="Se souvenir de moi">Se souvenir de moi <br>
 
-               <div id="membre">Nouveau Membre ?<a href="test_form.php"><br>Inscrivez-vous !</a></div>
+               <div id="membre">Nouveau Membre ?<a href="form.php"><br>Inscrivez-vous !</a></div>
             </form>
     </div>
     </main>

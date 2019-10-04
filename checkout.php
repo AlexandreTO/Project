@@ -33,52 +33,67 @@
               }
             ?>
     <?php 
-        $nom= $_POST['nom'];
-        $prenom= $_POST['prenom'];
-        $date= $_POST['date'];
-        $adresse= $_POST['adresse'];
+        $nom= htmlspecialchars($_POST['nom']);
+        $prenom= htmlspecialchars($_POST['prenom']);
+        $date= htmlspecialchars($_POST['date']);
+        $adresse= htmlspecialchars($_POST['adresse']);
         $code_postal= $_POST['code_postal'];
         $email = $_POST['email'];
-        $user = $_POST['utilisateur'];
+        $user = htmlspecialchars($_POST['utilisateur']);
         $mdp = $_POST['password'];
+        $ville = htmlspecialchars($_POST['ville']);
+        $tel = $_POST['tel'];
         $pass_hache = password_hash($mdp,PASSWORD_DEFAULT);
-        echo $pass_hache;
         try{
             // On compare le mail entré à ceux qui sont présents dans la base de données avant de décider de l'intégrer dans la BDD
             $req = $bdd -> prepare("select Email from clients where Email = ?");
             $req -> execute(array($email));
-            $row = $req -> rowCount(); //renvoie 1 si le mail entré est présent dans la base de données ou non.
-            echo '<br>';
-            $req1 = $bdd -> prepare("select Utilisateur from clients where Utilisateur =?");
+            $row = $req -> fetchColumn(); //renvoie 1 si le mail entré est présent dans la base de données ou non.
+            $req1 = $bdd -> prepare("select Username from clients where Username =?");
             $req1 -> execute(array($user));
-            $row1 = $req1 -> rowCount();    //renvoie 1 si le nom d'utilisateur entré est présent dans la base de données ou non.
-            echo '<br>';
+            $row1 = $req1 -> fetchColumn();//renvoie 1 si le nom d'utilisateur entré est présent dans la base de données ou no
+            $ranID = rand(1,9500);
             if ($row == 0 && $row1 == 0) {
 
                 // Si le mail et le nom d'utilisateur ne sont pas présents , il va être ensuite ajouté dans la base de données.
-                $response  = $bdd ->prepare("insert into clients(Nom,Prenom,Utilisateur,MDP,DateNaissance,Adresse,CodePostal,Email)
-                values(?,?,?,?,?,?,?,?)");
-                $response -> execute(array($nom,$prenom,$user,$pass_hache,$date,$adresse,$code_postal,$email));
+                $response  = $bdd ->prepare("insert into clients(id,Nom,Prenom,Username,PWD,Email,DateDeNaissance,Adresse,CodePostal,Ville,Telephone)
+                values(?,?,?,?,?,?,?,?,?,?,?)");
+                $response -> execute(array($ranID,$nom,$prenom,$user,$pass_hache,$email,$date,$adresse,$code_postal,$ville,$tel));
                 $response -> closeCursor();
-                echo "Insertion réussie";
+                echo "Compte crée !";
             }
             elseif ($row == 1 && $row1 == 0) {
                 echo "Le mail est déja utilisé";
                 $req -> closeCursor();
+                header("refresh: 5 ; url=connexion.php");
             }
             elseif ($row == 0 && $row1 == 1) {
                 echo "Le nom d'utilisateur est déja utilisé";
                 $req1 -> closeCursor();
+                header("refresh: 5 ; url=connexion.php");
             }
 
         }
         catch(Exception $e){
             die($e-> getMessage());
         }
+        
     ?>
-    <form action="connexion.php" method="post">
-        <button class="btn btn-primary" type="submit">Retour</button>
-    </form>
+    <p> Vous allez être redirigé dans <span id="counter">5</span> seconde(s)</p>
+        <!-- Comptes à rebours -->
+    <script type="text/javascript">
+        function countdown() {
+            var i = document.getElementById('counter');
+            if (parseInt(i.innerHTML)<=0) {
+                location.href = 'connexion.php';
+            }
+            if (parseInt(i.innerHTML)!=0) {
+                i.innerHTML = parseInt(i.innerHTML)-1;
+            }
+        }
+        setInterval(function(){ countdown(); },1000);
+    </script>
+        
 </body>
 
 </html>
