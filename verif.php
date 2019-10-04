@@ -39,10 +39,10 @@
         //Récupération des identifiants
             
             $id = $_POST['identifiant'];
-            $req = $bdd ->prepare("select Utilisateur,MDP from clients where Utilisateur = :id");
+            $req = $bdd ->prepare("select Username,PWD from clients where Username = :id");
             $req ->execute(array('id' => $id));
             $resultat = $req -> fetch();
-            $req1 = $bdd -> prepare("select count(Utilisateur)from clients where Utilisateur = :user");
+            $req1 = $bdd -> prepare("select count(Username)from clients where Username = :user");
             $req1 -> execute(array('user' => $id));
             $res1 = $req1 ->fetchColumn();
             if ($res1 == 0) {
@@ -51,7 +51,7 @@
             }
             else{
         // Récupération du mot de passe et comparaison avec le mdp hashé dans la base de données.
-                $isPwdCorrect = password_verify($_POST['mdp'],$resultat['MDP']);
+                $isPwdCorrect = password_verify($_POST['mdp'],$resultat['PWD']);
                 if ($isPwdCorrect) {
                      // Création de la session si les entrées sont correctes
                     session_start();
