@@ -1,10 +1,3 @@
-html,
-body,
-header,
-.view {
-    margin: 0px;
-    background-color: rgb(250, 247, 243);
-}
 
 main {
     margin: 0 auto;
@@ -34,19 +27,7 @@ main {
 .title{
     font-size:50px;
 }
-.navbar {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: center;
-    padding: 0.5rem 1rem;
-    background-color: rgb(250, 247, 243);
-    margin: 0px;
-    font-family: 'Courgette';
-}
+
 
 a {
     text-decoration: none;
@@ -64,8 +45,6 @@ a:hover {
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .fixed-top {
