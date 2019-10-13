@@ -25,10 +25,16 @@
                     <a class="nav-link" href="Services.php">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="deconnexion.php">Deconnexion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bonjour <?php echo htmlspecialchars($_SESSION['identifiant'])."!" ?></a>
+                    <div class="btn-group" role="group">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            Mon compte
+                        </a>
+                        <div class="dropdown-menu">
+                            <h6 class="dropdown-header">Bonjour <?php echo $_SESSION['identifiant']?> !</h6>
+                            <a class="dropdown-item" href="#">Panier</a>
+                            <a href="deconnexion.php" class="dropdown-item"> Deconnexion</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>

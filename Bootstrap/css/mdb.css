@@ -4605,9 +4605,6 @@ a.waves-effect, a.waves-light {
       padding-top: 0.38rem;
       padding-bottom: 0.38rem; }
 
-.btn-group .btn {
-  margin: 0; }
-
 .btn .fa-lg,
 .btn-floating .fa-lg {
   font-size: 1.33333em  !important; }
@@ -6646,7 +6643,13 @@ a.btn:not([href]):not([tabindex]):hover {
         padding-left: 6px; } }
   .navbar .dropdown-menu {
     position: absolute !important;
-    margin-top: 0; }
+    margin-top: 0;
+    background-color: rgba(242, 152, 152, 0.8);
+   }
+   .navbar:hover .dropdown-menu:hover{
+     background-color: rgba(242, 152, 152, 0.5);
+   }
+   .nav
     .navbar .dropdown-menu a {
       padding: 10px;
       font-size: 0.9375rem;
