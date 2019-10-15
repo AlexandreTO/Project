@@ -34,13 +34,27 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row bg white">
             <div class="col-lg-6">
-                <h2>Production</h2>
                 <div class="py-3">
                     <img src="images/robin-sommer-wnOJ83k8r4w-unsplash.jpg" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
+            <div class="col-lg-6">
+            <h2 class="text-center pt-3">Production</h2>
+
+                    <hr>
+
+
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tempor iaculis. Sed rutrum
+                        finibus nulla, venenatis porttitor libero pretium id. Nam porttitor quam in dui facilisis
+                        sollicitudin. Proin tempus dapibus nulla, eget facilisis orci varius nec. Vivamus dui libero,
+                        hendrerit vitae lorem vel, facilisis fringilla arcu. Morbi faucibus vulputate tristique. Integer id
+                        ipsum justo. Integer at quam turpis. Donec tincidunt elit sed felis varius auctor. Curabitur nec
+                        malesuada ipsum, venenatis molestie turpis. Curabitur fringilla ligula eu leo convallis volutpat
+                    </p>
+                </div>
         </div>
 
         <div class="row">
