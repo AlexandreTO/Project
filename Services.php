@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Connexion</title>
+    <title>Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="Bootstrap/css/bootstrap.css" />
     <link href="Bootstrap/css/mdb.css" rel="stylesheet" />
@@ -21,6 +21,10 @@
 
 <body>
     <nav><?php include("entete.php"); ?></nav>
+
+
+    
+    </div>
 </body>
 
 </html>
