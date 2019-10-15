@@ -34,7 +34,7 @@
     </div>
 </header>
 
-<body id="Connexion">
+<body>
     <!-- Formulaires de contact -->
     <div class="intro2 container align-content-center">
         <main class="text-center">
@@ -57,8 +57,9 @@
 
                 <div id="membre">Nouveau Membre ?<a href="form.php"><br>Inscrivez-vous !</a></div>
             </form>
+        </main>
     </div>
-    </main>
+
 </body>
 
 </html>
