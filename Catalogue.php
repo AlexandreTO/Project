@@ -20,10 +20,8 @@
     <!-- DANS CET ORDRE -->
 </head>
 
-
-<body>
-    <header>
-        <?php include("entete_membre.php"); ?>
+<header class="header_page">
+        <?php include("entete.php"); ?>
         <div class="view intro">
             <div class="mask flex-center">
                 <div class="container text-center white-text">
@@ -32,6 +30,7 @@
             </div>
         </div>
     </header>
+<body>
 
     <main>
         <section class="container1">

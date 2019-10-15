@@ -180,6 +180,12 @@ h3{
   body{
     padding-top:61px;
   }
+  .navbar{
+    padding : 0;
+  }
+  .navbar .nav-item .nav-link{
+    background-color: #f29898;
+  }
 }
 @media (min-width: 576px) {
   .container2 {

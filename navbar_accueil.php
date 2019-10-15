@@ -21,10 +21,10 @@
         </ul>
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
             <li class="nav-item">
-                <a class="nav-link" href="form.php"><span class="fas fa-user"></span>S'inscrire</a>
+                <a class="nav-link" href="form.php"><span class="fas fa-user"></span> S'inscrire</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="connexion.php"><span class="fas fa-sign-in-alt"></span>Connexion</a>
+                <a class="nav-link" href="connexion.php"><span class="fas fa-sign-in-alt"></span> Connexion</a>
             </li>
         </ul>
     </div>
