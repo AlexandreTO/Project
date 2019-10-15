@@ -21,7 +21,34 @@
 
 <body>
     <nav><?php include("entete.php"); ?></nav>
+    <div class="container">
 
+        <div class="row">
+            <div class="col-lg-6">
+            <h2>Production</h2>
+                <div class="py-3">
+                    <img src="images/robin-sommer-wnOJ83k8r4w-unsplash.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+            <h2>Transport</h2>
+                <div class="py-3">
+                    <img src="images/nigel-tadyanehondo-GOD2mDNujuU-unsplash.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+            <h2>Service Après-Vente</h2>
+                <div class="py-3">
+                    <img src="images/blake-wisz-GFrBMipOd_E-unsplash.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
 
     
     </div>
