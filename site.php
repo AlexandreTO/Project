@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <?php include("entete.php"); ?>
+        <?php include("navbar_accueil.php"); ?>
         <div class="view intro">
             <div class="mask flex-center">
                 <div class="container text-center white-text">
@@ -32,8 +32,10 @@
             </div>
         </div>
     </header>
-
+    <br>
+    <br>
     <main class="py-5">
+
         <div class="container2">
             <div class="row align-items-center">
                 <div class="col-sm-5 m-1">
@@ -49,9 +51,11 @@
                     nulla, eget facilisis orci varius nec. Vivamus dui libero, hendrerit vitae lorem vel, facilisis
                     fringilla
                     arcu.
-                    Morbi faucibus vulputate tristique. Integer id ipsum justo. Integer at quam turpis. Donec tincidunt
+                    Morbi faucibus vulputate tristique. Integer id ipsum justo. Integer at quam turpis. Donec
+                    tincidunt
                     elit sed
-                    felis varius auctor. Curabitur nec malesuada ipsum, venenatis molestie turpis. Curabitur fringilla
+                    felis varius auctor. Curabitur nec malesuada ipsum, venenatis molestie turpis. Curabitur
+                    fringilla
                     ligula eu
                     leo
                     convallis volutpat
@@ -60,30 +64,34 @@
         </div>
         <br>
         <br><br>
-        <div class="container2">
-            <div class="row align-items-center">
-                <div class="col-sm mx-3 text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tempor iaculis. Sed rutrum
-                    finibus
-                    nulla,
-                    venenatis porttitor libero pretium id. Nam porttitor quam in dui facilisis sollicitudin. Proin
-                    tempus
-                    dapibus
-                    nulla, eget facilisis orci varius nec. Vivamus dui libero, hendrerit vitae lorem vel, facilisis
-                    fringilla
-                    arcu.
-                    Morbi faucibus vulputate tristique. Integer id ipsum justo. Integer at quam turpis. Donec tincidunt
-                    elit sed
-                    felis varius auctor. Curabitur nec malesuada ipsum, venenatis molestie turpis. Curabitur fringilla
-                    ligula eu
-                    leo
-                    convallis volutpat
-                </div>
-                <div class="col-sm-5 m-1 order-first order-lg-2">
-                    <img src="images/joseph-gonzalez-208309-unsplash.jpg" alt="" class="img1 ">
+        <section class="sect1">
+            <div class="container2">
+                <div class="row align-items-center">
+                    <div class="col-sm mx-3 text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tempor iaculis. Sed rutrum
+                        finibus
+                        nulla,
+                        venenatis porttitor libero pretium id. Nam porttitor quam in dui facilisis sollicitudin. Proin
+                        tempus
+                        dapibus
+                        nulla, eget facilisis orci varius nec. Vivamus dui libero, hendrerit vitae lorem vel, facilisis
+                        fringilla
+                        arcu.
+                        Morbi faucibus vulputate tristique. Integer id ipsum justo. Integer at quam turpis. Donec
+                        tincidunt
+                        elit sed
+                        felis varius auctor. Curabitur nec malesuada ipsum, venenatis molestie turpis. Curabitur
+                        fringilla
+                        ligula eu
+                        leo
+                        convallis volutpat
+                    </div>
+                    <div class="col-sm-5 m-1 order-first order-lg-2">
+                        <img src="images/joseph-gonzalez-208309-unsplash.jpg" alt="" class="img1 ">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <br>
         <br><br>
         <div class="container">
