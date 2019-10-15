@@ -1,2 +1,5 @@
-Changelog pour le site
- A modifier à chaque commit avec les modifications faites
+Changelog 
+15/10/2019 
+Continuatiion du design du site.
+Ajout de la section à propos. 
+Changement du header and réarrangement de la barre de navigation 

@@ -12,11 +12,11 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-fill w-100">
-                <li class="nav-item">
+                <a href="site_membre.php">
                     <img src="images/logo.png" alt="" width="50px" height="50px">
-                </li>
+                </a>
                 <li class="nav-item">
-                    <a class="nav-link" href="site_membre.php">Accueil</a>
+                    <a class="nav-link" href="#a-propos">A propos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Catalogue.php">Catalogue</a>

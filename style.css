@@ -9,6 +9,9 @@ header,
 .view {
   height: 90%;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 header,
 footer,nav,form {
@@ -20,23 +23,39 @@ footer,nav,form {
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
   color:black;
 }
+.h1-size{
+  font-size:3.5em;
+}
+
+.h2-size{
+  font-size:2.5rem;
+}
 
 .intro {
-  background: url("images/header.png");
+  background: url("images/brian-chan-12168-unsplash.jpg");
+  height: 100%;
   /*Parallax*/
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.intro-2{
+  background-image: url("images/tartes.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
 .navbar{
-  background: rgba(242, 152, 152, 0.8);
+  background: rgba(242, 152, 152, 1);
 }
 .navbar-default {
   transition: 500ms ease;
 }
 .navbar-default.scrolled {
-  background:rgba(242, 152, 152, 0.8);
+  background:rgba(242, 152, 152, 0.9);
 }
 .img1 {
   width: 100%;

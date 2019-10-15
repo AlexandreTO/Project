@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -28,8 +26,8 @@
         <div class="view intro">
             <div class="mask flex-center">
                 <div class="container text-center white-text">
-                    <h1 class="h1FadeIn">Easy Stockage</h1>
-                    <h2 class="h1FadeIn">La magie de la gourmandise</h2>
+                    <h1 class="h1FadeIn h1-size">Easy Stockage</h1>
+                    <h2 class="h1FadeIn h2-size">La magie de la gourmandise</h2>
                 </div>
             </div>
         </div>
@@ -109,6 +107,23 @@
                 leo
                 convallis volutpat
             </div>
+        </div>
+        <br>
+        <div class="intro-2"></div>
+        <div id="bts"></div>
+        <br>
+        <div class="container" id="a-propos">
+            <div class="mx-3 text-center">
+                <h1>A propos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tempor iaculis. Sed rutrum
+                    finibus nulla, venenatis porttitor libero pretium id. Nam porttitor quam in dui facilisis
+                    sollicitudin. Proin tempus dapibus nulla, eget facilisis orci varius nec. Vivamus dui libero,
+                    hendrerit vitae lorem vel, facilisis fringilla arcu. Morbi faucibus vulputate tristique. Integer id
+                    ipsum justo. Integer at quam turpis. Donec tincidunt elit sed felis varius auctor. Curabitur nec
+                    malesuada ipsum, venenatis molestie turpis. Curabitur fringilla ligula eu leo convallis volutpat
+                </p>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
     <?php include("footer.php"); ?>
