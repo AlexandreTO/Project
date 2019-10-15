@@ -5,3 +5,4 @@ Changelog
 - Changement du header and réarrangement de la barre de navigation 
 - Refonte complète de la barre de navigation
 - Fix du header des pages connexion et inscription
+- Modification de le page Catalogue : visible partout maintenant

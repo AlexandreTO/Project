@@ -15,6 +15,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Catalogue.php">Catalogue</a>
+            </li>
         </ul>
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
             <li class="nav-item">
