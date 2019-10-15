@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="Bootstrap/css/bootstrap.css" />
     <link href="Bootstrap/css/mdb.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
     <script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
     <script src="Bootstrap/js/popper.min.js"></script>
@@ -22,15 +23,25 @@
     <!-- DANS CET ORDRE -->
 </head>
 
-<body id="Connexion">
-    <nav><?php include("entete.php"); ?></nav>
+<header class="header_page">
+    <?php include("entete.php"); ?>
+    <div class="view intro3">
+        <div class="mask flex-center">
+            <div class="container text-center white-text">
+                <h1 class="h1FadeIn h1-size">Connexion</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
     <!-- Formulaires de contact -->
     <div class="intro2 container align-content-center">
         <main class="text-center">
 
             <form action="verif.php" class="login" method="post">
 
-                <H1>Espace Membre</H1>            
+                <H1>Espace Membre</H1>
 
                 <H3>Connexion</H3>
 
@@ -44,10 +55,11 @@
 
                 <input type="checkbox" id="bouton" value="Se souvenir de moi">Se souvenir de moi <br>
 
-               <div id="membre">Nouveau Membre ?<a href="form.php"><br>Inscrivez-vous !</a></div>
+                <div id="membre">Nouveau Membre ?<a href="form.php"><br>Inscrivez-vous !</a></div>
             </form>
+        </main>
     </div>
-    </main>
+
 </body>
 
 </html>

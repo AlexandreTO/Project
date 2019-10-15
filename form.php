@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Test PHP</title>
+    <title>Formulaire d'inscription</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="Bootstrap/css/bootstrap.css" />
     <link href="Bootstrap/css/mdb.css" rel="stylesheet" />
@@ -20,8 +20,18 @@
     <!-- DANS CET ORDRE -->
 </head>
 
+<header class="header_page">
+    <?php include("entete.php"); ?>
+    <div class="view intro3">
+        <div class="mask flex-center">
+            <div class="container text-center white-text">
+                <h1 class="h1FadeIn h1-size">Formulaire</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
 <body>
-    <nav><?php include("entete.php"); ?></nav>
     <main>
         <?php
             /*
@@ -62,8 +72,7 @@
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="validationCustom01">Mot de passe</label>
-                        <input type="password" name="password" id="validationCustom01" class="form-control"
-                            required>
+                        <input type="password" name="password" id="validationCustom01" class="form-control" required>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="validationBirthday">Date de naissance</label>
@@ -72,8 +81,8 @@
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="validationCustom03">Téléphone</label>
-                        <input type="text" class="form-control" id="validationCustom03" placeholder="Tel" maxlenght ="10" required
-                            name="tel">
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="Tel" maxlenght="10"
+                            required name="tel">
                         <div class="invalid-feedback">
                             Entrez un numéro de téléphone
                         </div>

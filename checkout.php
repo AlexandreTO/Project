@@ -16,7 +16,6 @@
     <script src="Bootstrap/js/bootstrap.min.js"></script>
     <script src="Bootstrap/js/mdb.min.js"></script>
     <script src="main.js"></script>
-    <!-- DANS CET ORDRE -->
 </head>
 <body>
     <nav><?php include("entete.php"); ?></nav>

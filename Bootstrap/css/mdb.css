@@ -6599,8 +6599,6 @@ a.btn:not([href]):not([tabindex]):hover {
   height: calc(2.25rem + 2px); }
 
 .navbar {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   font-weight: 300; }
   .navbar form .md-form input {
     margin: 0 5px 1px 8px; }
