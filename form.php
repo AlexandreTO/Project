@@ -38,7 +38,7 @@
             Code afin de vérifier si on est connecté à la BDD
             */
               try {
-                $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', 'root');
+                $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', '');
               } 
               catch (Exception $e) {
                   die('Erreur: ' . $e->getMessage());

@@ -27,7 +27,7 @@
             Code afin de vérifier si on est connecté à la BDD
             */
               try {
-                $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', 'root');
+                $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', '');
                 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
               } 
               catch (Exception $e) {
