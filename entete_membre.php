@@ -23,7 +23,7 @@
                 <a class="nav-link" href="contact.php">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="catalogue.php">Catalogue</a>
+                <a class="nav-link" href="Catalogue_membre.php">Catalogue</a>
             </li>
         </ul>
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
