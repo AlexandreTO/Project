@@ -22,12 +22,13 @@
 
 <body>
     <?php include("entete.php"); ?>
+    <main class="py-5 marge-message">
     <?php
             /*
             Code afin de vérifier si on est connecté à la BDD
             */
               try {
-                $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', '');
+                $bdd = new PDO('mysql:host=localhost;dbname=projet;','root','root');
                 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
               } 
               catch (Exception $e) {
@@ -46,7 +47,7 @@
             $req1 -> execute(array('user' => $id));
             $res1 = $req1 ->fetchColumn();
             if ($res1 == 0) {
-                echo " Utilisateur non existant";
+                echo "Utilisateur non existant";
                 header("refresh:5; url=connexion.php");
             }
             else{
@@ -59,12 +60,13 @@
                     header('location:site_membre.php'); //renvoie vers le site réservé aux membres
                 }  
                 else{
-                    echo "Mauvais mot de passe!";
+                    echo "<p>Mauvais mot de passe!</p>";
                     header('refresh:5 ; url=connexion.php');
                     $req ->closeCursor();
                 }
             }
         ?>
+
     <p> Vous allez être redirigé dans <span id="counter">5</span> seconde(s)</p>
     <!-- Comptes à rebours -->
     <script type="text/javascript">
@@ -81,7 +83,7 @@
             countdown();
         }, 1000);
     </script>
-
+    </main>
 
 </body>
 </html>

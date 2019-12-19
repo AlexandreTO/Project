@@ -1,10 +1,7 @@
 # Changelog
 
-15/10/2019
+19/12/2019
 
-- Continuation du design du site
-- Ajout de la section à propos
-- Changement du header and réarrangement de la barre de navigation
-- Refonte complète de la barre de navigation
-- Fix du header des pages connexion et inscription
-- Modification de le page Catalogue : visible partout maintenant
+- Nouvelle Base de données(changement du mot de passe root)
+
+- Fix de l'affichage des messages dans le *checkout* et *verif* pour qu'ils soient visibles sur l'écran.

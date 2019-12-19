@@ -18,19 +18,21 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <nav><?php include("entete.php"); ?></nav>
+    <?php include("entete.php"); ?>
     <?php
             /*
             Code afin de vérifier si on est connecté à la BDD
             */
               try {
                 $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', 'root');
-                // $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
               } 
               catch (Exception $e) {
                   die('Erreur: ' . $e->getMessage());
               }
             ?>
+    <main class="py-5">
+    <div class="container">
     <?php 
         $nom= htmlspecialchars($_POST['nom']);
         $prenom= htmlspecialchars($_POST['prenom']);
@@ -55,21 +57,21 @@
             if ($row == 0 && $row1 == 0) {
 
                 // Si le mail et le nom d'utilisateur ne sont pas présents , il va être ensuite ajouté dans la base de données.
-                $response  = $bdd ->prepare("insert into clients(id,Nom,Prenom,Username,PWD,Email,DateDeNaissance,Adresse,CodePostal,Ville,Telephone)
-                values(?,?,?,?,?,?,?,?,?,?,?)");
-                $response -> execute(array($ranID,$nom,$prenom,$user,$pass_hache,$email,$date,$adresse,$code_postal,$ville,$tel));
-                $response -> closeCursor();
-                echo "Compte crée !";
+                $response  = $bdd ->prepare("insert into clients(Nom,Prenom,Email,PWD,DateDeNaissance,Adresse,Telephone,Username,Ville,CodePostal)
+                values(?,?,?,?,?,?,?,?,?,?)");
+                $response -> execute(array($nom,$prenom,$email,$pass_hache,$date,$adresse,$tel,$user,$ville,$code_postal));
+                $response -> closeCursor(); 
+                echo "<p>Compte crée ! </p> ";
             }
             elseif ($row == 1 && $row1 == 0) {
                 echo "Le mail est déja utilisé";
                 $req -> closeCursor();
-                header("refresh: 5 ; url=connexion.php");
+                // header("refresh: 5 ; url=connexion.php");
             }
             elseif ($row == 0 && $row1 == 1) {
                 echo "Le nom d'utilisateur est déja utilisé";
                 $req1 -> closeCursor();
-                header("refresh: 5 ; url=connexion.php");
+                // header("refresh: 5 ; url=connexion.php");
             }
 
         }
@@ -92,6 +94,8 @@
         }
         setInterval(function(){ countdown(); },1000);
     </script>
+    </div>
+    </main>
         
 </body>
 
