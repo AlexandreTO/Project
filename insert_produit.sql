@@ -1,4 +1,4 @@
-INSERT INTO `produit` (, `Nom`, `Reference`, `Prix`, `Description`) VALUES
+INSERT INTO `produit` (`Nom`, `Reference`, `Prix`, `Description`) VALUES
 ('Cupcake', 'ref', 5, 'Cupcake avec pépite chocolats');
 
 INSERT INTO 'produit' ('Nom','Reference','Prix','Description') VALUES
