@@ -20,45 +20,67 @@
 </head>
 
 <body>
+    <?php include("entete.php"); ?>
+    <main class="py-5 marge-message">
         <?php
-            /*
+        /*
             Code afin de vérifier si on est connecté à la BDD
             */
-              try {
-                $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', 'root');
-                // $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-              } 
-              catch (Exception $e) {
-                  die('Erreur: ' . $e->getMessage());
-              }
+        try {
+            $bdd = new PDO('mysql:host=localhost;dbname=projet;', 'root', 'root');
+            $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (Exception $e) {
+            die('Erreur: ' . $e->getMessage());
+        }
         ?>
 
         <?php
         //Récupération des identifiants
-            $id = $_POST['identifiant'];
-            echo $id;
-            echo "<br>";
-            echo $_POST['MDP'];
-            echo "<br>";
-            $req = $bdd ->prepare("select Utilisateur,MDP from clients where Utilisateur = :id");
-            $req ->execute(array('id' => $id));
-            $resultat = $req -> fetch();
-            
-        // Récupération du mot de passe et comparaison avec le mdp hashé dans la base de données.
-            $isPwdCorrect = password_verify($_POST['MDP'],$resultat['MDP']);
-            if (!$resultat) {
-                echo "Mauvais mot de passe ou identifiant !";
+
+        $id = $_POST['identifiant'];
+        $req = $bdd->prepare("select Username,PWD from clients where Username = :id");
+        $req->execute(array('id' => $id));
+        $resultat = $req->fetch();
+        $req1 = $bdd->prepare("select count(Username)from clients where Username = :user");
+        $req1->execute(array('user' => $id));
+        $res1 = $req1->fetchColumn();
+        if ($res1 == 0) {
+            echo "Utilisateur non existant";
+            header("refresh:5; url=connexion.php");
+        } else {
+            // Récupération du mot de passe et comparaison avec le mdp hashé dans la base de données.
+            $isPwdCorrect = password_verify($_POST['mdp'], $resultat['PWD']);
+            if ($isPwdCorrect) {
+                // Création de la session si les entrées sont correctes
+                session_start();
+                $_SESSION['identifiant'] = $id;
+                header('location:site_membre.php'); //renvoie vers le site réservé aux membres
+            } else {
+                echo "<p>Mauvais mot de passe!</p>";
+                header('refresh:5 ; url=connexion.php');
+                $req->closeCursor();
             }
-            else {
-                if ($isPwdCorrect) {
-                    session_start();
-                    $_SESSION['identifiant'] = $resultat[$id];
-                    echo "Vous êtes connecté !";
-                }
-                else {
-                    echo "Mauvais mot de passe ou identifiant !";
-                }
-            } 
+        }
         ?>
 
+        <p> Vous allez être redirigé dans <span id="counter">5</span> seconde(s)</p>
+        <!-- Comptes à rebours -->
+        <script type="text/javascript">
+            function countdown() {
+                var i = document.getElementById('counter');
+                if (parseInt(i.innerHTML) <= 0) {
+                    location.href = 'connexion.php';
+                }
+                if (parseInt(i.innerHTML) != 0) {
+                    i.innerHTML = parseInt(i.innerHTML) - 1;
+                }
+            }
+            setInterval(function() {
+                countdown();
+            }, 1000);
+        </script>
+    </main>
+
 </body>
+
+</html>

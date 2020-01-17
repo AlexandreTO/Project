@@ -20,8 +20,18 @@
     <!-- DANS CET ORDRE -->
 </head>
 
+<header class="header_page">
+    <?php include("entete.php"); ?>
+    <div class="view intro3">
+        <div class="mask flex-center">
+            <div class="container text-center white-text">
+                <h1 class="h1FadeIn h1-size">Contact</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
 <body>
-    <nav><?php include("entete.php"); ?></nav>
     <br>
     <br>
     <div class="container">
