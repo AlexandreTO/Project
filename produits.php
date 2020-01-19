@@ -31,27 +31,36 @@
 <body>
 
     <main>     
-        <h2 class="title_category">Catégories</h2>
-
-<!--Bdd connection-->
+        <h2 class="title_category">Produits</h2>
         <?php
         $bdd = new PDO('mysql:host=localhost;dbname=projet_two;charset=utf8', 'root', '');
-        $category_requete = 'SELECT Categorie, Image FROM produit GROUP BY Categorie';
+
+        $products_query = 'SELECT * FROM Produit WHERE Categorie = "' . $_GET["Categorie"] . '"';
+
         ?>
 
+        <section class="products_page">
+
+            <article>
+                
+            </article>
+            
+        </section>
+
+
+
+
         <section class="products_categories">
-            <?php foreach ($bdd->query($category_requete) as $products_categories): ?>
-            <a class="category" href="produits.php?Categorie=<?php echo $products_categories['Categorie'] ?>">
-                <article>
-                    <img src="images/<?php echo $products_categories['Image']?>">
-                    <h3><?php echo $products_categories['Categorie'] ?></h3>
+            <?php foreach ($bdd->query($products_query) as $products): ?>
+                <article class="category">
+                    <img src="images/<?php echo $products['Image']?>" width = 200px; height = 150px;>
+                    <h3><?php echo $products['Nom'] ?></h3>
+                    <a class="products" href="produits.php">Ajouter au panier</a>
                 </article>
-            </a>
+           
         <?php endforeach; ?>
         </section>
     </main>
 </body>
 
 </html>
-
- <!-- , array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)) -->
