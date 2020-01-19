@@ -39,7 +39,7 @@
         $category_requete = 'SELECT Categorie, Image FROM produit GROUP BY Categorie';
         ?>
 
-        <section class="products_categories">
+        <section class="categories_container">
             <?php foreach ($bdd->query($category_requete) as $products_categories): ?>
             <a class="category" href="produits.php?Categorie=<?php echo $products_categories['Categorie'] ?>">
                 <article>

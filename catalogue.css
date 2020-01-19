@@ -6,33 +6,35 @@ main
     font-family: 'Courgette', Arial, sans-serif;
 }
 
-.products_categories
-{
-    background-color: white;
-    margin: 2.5%;
-    display: flex;
-    justify-content: space-between;
-}
-
 .title_category
 {
     text-align: center;
-    padding: 2.5%;
+    padding: 2%;
+    font-family: 'Oxygen', Arial, sans-serif;
+    letter-spacing: 5px;
+    color: pink;
 }
 
-.category
+.categories_container, .products_container
 {
-    width: 200px;
-    height: 200px;
-    /*background-image: url(images/cookies.jpg);*/
-    /*background-color: rgba(0, 0, 255, 0.5);
-    background-size: 150%;
-    background-repeat: no-repeat;*/
+    background-color: white;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category, .product
+{
+    max-width: 100%;
     border: solid 5px;
     margin: 3%;
     text-decoration: none;
     border : none;
     color: pink;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .category:link
@@ -63,39 +65,175 @@ main
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
     border: none;
+    flex-wrap: wrap;
 }
 
 .category img
 {
-    max-width:100%;
-    max-height:100%;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+
 }
 
-.category article h3
+.category article h3, .category_aside
 {
-    /*align-items: center;
-    justify-content: center;*/
+    text-transform: capitalize;
 }
 
 
 /*PARTIE PRODUITS*/
 
-.products 
+.products_container aside
 {
-   /* width: 250px;
-    height: 200px;*/
-    border: solid;
+                                 /*border: solid pink;*/
+    width: 20%;
+   /* display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;*/
+    
+}
+
+.list_category
+{
+   
+}
+
+.products_container aside h3
+{
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.list_category li
+{
+    list-style-type: none;
+} 
+.list_category a
+{
+   /* text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;*/
+    color: rgba(242, 152, 152, 1);
+    font-family: 'Oxygen', Arial, sans-serif;
+}
+
+.products_part
+{
+    /*border:solid;*/
+    width: 80%;
+    display: flex;
     flex-wrap: wrap;
 }
 
-.products article img
+.product 
+{
+    width: 250px;
+    height: 300px;
+    /*border:solid red;*/
+    position: relative;
+    justify-content: center;
+}
+
+.image_product
+{
+    width: 100%;
+    height: 80%;
+
+    /*border:solid green;*/
+    position: relative;
+}
+
+                           /* .product a
+                            {
+                                border : solid green;
+                            }*/
+
+
+
+.image_product img, .hidden_description_product
+{
+    position: absolute;
+}
+
+.image_product img
 {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
+.hidden_description_product
+{
+    visibility: hidden;
+}
+
+.product:hover .hidden_description_product
+{
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hidden_description_product h3
+{
+    color: rgba(0, 0, 0, 0.7);
+    top: 1%;
+}
+
+.description_product
+{
+    font-family: "Oxygen", Arial, sans-serif;
+    color: darkgrey;
+    margin: 2%;
+}
+
+.price_product
+{
+    font-family: "Oxygen", Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(242, 152, 152, 1);
+}
+
+.add_to_cart
+{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oxygen", Arial, sans-serif;
+    color: white;
+    background-color: rgba(242, 152, 152, 0.7);
+}
+
+.add_to_cart:hover
+{
+    color: white;
+}
+
+/*.product h3
+{
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 3%;
+
+    color: black;
+
+}*/
