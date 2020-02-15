@@ -10,13 +10,11 @@
     <link href="Bootstrap/css/mdb.css" rel="stylesheet" />
     <link rel="stylesheet" href="catalogue.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
+ <!--    <script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
     <script src="Bootstrap/js/popper.min.js"></script>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
     <script src="Bootstrap/js/mdb.min.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js"></script> -->
     <!-- DANS CET ORDRE -->
 </head>
 
@@ -32,88 +30,28 @@
     </header>
 <body>
 
-    <main>
-        <section class="container1">
-            <div class="produit1">
-                <img src="images/tartes.jpg" class="img1cat" alt="tartes">
-                <div class="commentaire1">
-                    <ul id="menu-demo2">
-                        <li><a href="#">Lien menu 1</a>
-                            <ul>
-                                <li><a href="choix-produit">CHOIX 1</a></li>
-                                <li><a href="choix-produit">CHOIX 2</a></li>
-                                <li><a href="choix-produit">CHOIX 3</a></li>
-                                <li><a href="choix-produit">CHOIX 4</a></li>
-                            </ul>
-                        </li>
-                        <ul>
-                </div>
-                <p>
-                    <a href="#" class="bouton1">Acheter</a>
-                </p>
-            </div>
+    <main>     
+        <h2 class="title_category">Catégories</h2>
 
-            <div class="produit2">
-                <img src="images/tartes.jpg" class="img1cat" alt="tartes">
-                <div class="commentaire2">
-                    <ul id="menu-demo2">
-                        <li><a href="#">Lien menu 1</a>
-                            <ul>
-                                <li><a href="choix-produit">CHOIX 1</a></li>
-                                <li><a href="choix-produit">CHOIX 2</a></li>
-                                <li><a href="choix-produit">CHOIX 3</a></li>
-                                <li><a href="choix-produit">CHOIX 4</a></li>
-                            </ul>
-                        </li>
-                        <ul>
-                </div>
-                <p>
-                    <a href="#" class="bouton1">Acheter</a>
-                </p>
-            </div>
-            </div>
+<!--Bdd connection-->
+        <?php
+        $bdd = new PDO('mysql:host=localhost;dbname=projet_two;charset=utf8', 'root', '');
+        $category_requete = 'SELECT Categorie, Image FROM produit GROUP BY Categorie';
+        ?>
 
-            <div class="produit3">
-                <img src="images/tartes.jpg" class="img1cat" alt="tartes">
-                <div class="commentaire3">
-                    <ul id="menu-demo2">
-                        <li><a href="#">Lien menu 1</a>
-                            <ul>
-                                <li><a href="choix-produit">CHOIX 1</a></li>
-                                <li><a href="choix-produit">CHOIX 2</a></li>
-                                <li><a href="choix-produit">CHOIX 3</a></li>
-                                <li><a href="choix-produit">CHOIX 4</a></li>
-                            </ul>
-                        </li>
-                        <ul>
-                </div>
-                <p>
-                    <a href="#" class="bouton1">Acheter</a>
-                </p>
-            </div>
-
-            <div class="produit4">
-                <img src="images/tartes.jpg" class="img1cat" alt="tartes">
-                <div class="commentaire4">
-                    <ul id="menu-demo2">
-                        <li><a href="#">Lien menu 1</a>
-                            <ul>
-                                <li><a href="choix-produit">CHOIX 1</a></li>
-                                <li><a href="choix-produit">CHOIX 2</a></li>
-                                <li><a href="choix-produit">CHOIX 3</a></li>
-                                <li><a href="choix-produit">CHOIX 4</a></li>
-                            </ul>
-                        </li>
-                        <ul>
-                </div>
-                <p>
-                    <a href="#" class="bouton1">Acheter</a>
-                </p>
-            </div>
-            </div>
-
+        <section class="categories_container">
+            <?php foreach ($bdd->query($category_requete) as $products_categories): ?>
+            <a class="category" href="produits.php?Categorie=<?php echo $products_categories['Categorie'] ?>">
+                <article>
+                    <img src="images/<?php echo $products_categories['Image']?>">
+                    <h3><?php echo $products_categories['Categorie'] ?></h3>
+                </article>
+            </a>
+        <?php endforeach; ?>
         </section>
     </main>
 </body>
 
 </html>
+
+ <!-- , array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)) -->
