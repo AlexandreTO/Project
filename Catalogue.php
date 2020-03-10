@@ -35,7 +35,7 @@
 
 <!--Bdd connection-->
         <?php
-        $bdd = new PDO('mysql:host=localhost;dbname=projet_two;charset=utf8', 'root', '');
+        $bdd = new PDO('mysql:host=localhost;dbname=projet;charset=utf8', 'root', 'root');
         $category_requete = 'SELECT Categorie, Image FROM produit GROUP BY Categorie';
         ?>
 
